@@ -1,6 +1,3 @@
-# docs
-cp ../docs/photo.jpg docs/
-cp ../docs/*.pdf docs/
 # papers
 cp ~/repos/crprolog/paper/paper.pdf papers/crProlog.pdf
 cp ~/Dropbox/debt/comparability/paper/paper.pdf papers/comparability.pdf
