@@ -1,27 +1,27 @@
 \documentclass[12pt, letterpaper, sans]{moderncv}
-% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+%% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 \moderncvstyle{classic}
-% style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+%% style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
 
 \moderncvcolor{purple}
-% color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%% color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
 
 \usepackage[scale=.9]{geometry}
 
 \usepackage{docs}
 
-%\renewcommand{\familydefault}{\sfdefault}
-% to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+% \renewcommand{\familydefault}{\sfdefault}
+%% to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 
 \setlength{\hintscolumnwidth}{1.2in}
-% if you want to change the width of the column with the dates
+%% if you want to change the width of the column with the dates
 
-\name{Vu}{Phan}
+\name{Vu H. N.}{Phan}
 
 \title{CV}
 
-% pdf will be in following order; can't be changed
+%% pdf will be in following order; can't be changed
 % \address{}
 % \phone[mobile]{}
 % \email{}
@@ -30,11 +30,13 @@
 % \social[linkedin]{vuphan314}
 
 \photo[100pt][.1pt]{photo}
-% '64pt' is the height the picture must be resized to, .4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%% '64pt' is the height the picture must be resized to, .4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-\textbf{Latest version}: \github \\ This version: 2018/07/23
+\textbf{Latest version}: \github \\ This version: 2019/01/05
 
 \makecvtitle
 
@@ -45,32 +47,53 @@
 \cventry{2017/08--present}{Doctor of Philosophy}{\cs}{\rice}{Houston TX}{
   \begin{itemize}
     \item \advisor{\mv}
-    \item Research: propositional model counting
+    \item Research: fast exact weighted model counting
+    \item GPA: 3.60
   \end{itemize}
 }
 
-\cventry{2014/08--2017/08}{Dual Bachelor of Science}{\cs{} \& \maths}{\ttu}
-  {Lubbock TX}{}
+\cventry{2014/08--2017/08}{Dual Bachelor of Science}{\cs{} \& \maths}{\ttu}{Lubbock TX}{
+  \begin{itemize}
+    \item GPA: 4.00
+  \end{itemize}
+}
 
-\cventry{2013/01--2014/08}{Associate of Science}{}{\cc}{Plano TX}{}
+\cventry{2013/01--2014/08}{Associate of Science}{}{\cc}{Plano TX}{
+  \begin{itemize}
+    \item GPA: 4.00
+  \end{itemize}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Research}
 
-\subsection{Papers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Published}
 
-\cventry{2016--2018}{Syntactic Conditions for Antichain Property in \cp}{\lp}{}
-  {}{
-    \begin{itemize}
-      \item Found syntactic conditions guaranteeing when \cplong{} programs \\
-        have antichain property (no answer set is a proper subset of another).
-      \item Presented my published paper at the ASPOCP workshop
-        (affiliated with ICLP, part of FLoC) \\
-        at the University of Oxford on 2018/07/18.
-    \end{itemize}
-    Advisor: \mglong.
-  }
+\cventry{2016--2018}{Syntactic Conditions for Antichain Property in \cp}{\lp}{}{}{
+  \begin{itemize}
+    \item Found syntactic conditions guaranteeing when \cplong{} programs \\
+      have antichain property (no answer set is a proper subset of another).
+    \item Presented my paper at the ASPOCP workshop
+      (affiliated with ICLP, part of FLoC) \\
+      at the University of Oxford on 2018/07/18.
+  \end{itemize}
+  Supervisor: \mglong.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Unpublished}
+
+\cventry{2018--present}{Weighted Model Counting with \add s}{\cl}{}{}{
+  \begin{itemize}
+    \item Developing techniques for fast exact literal-weighted propositional model counting \\
+      using \add s.
+    \item Implementing \addmc: a competitive model counter.
+    \item Submitting our paper to IJCAI 2019.
+  \end{itemize}
+  Supervisor: \mvlong.
+}
 
 \cventry{2013--2017}{Biquasiarithmetic Mean Comparability}{\ma}{}{}{
   \begin{itemize}
@@ -79,91 +102,104 @@
       (previously submitted in 2013 \& 2014).
     \item Presented the results at the 2013 \tumc.
   \end{itemize}
-  Advisor: \aglong.
+  Supervisor: \aglong.
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iffalse
 \subsection{Projects}
 
 \cventry{2017}{Inverse Game of Life}{\ct}{}{}{
   \begin{itemize}
     \item Investigated the time complexity to invert Conway's Game of Life.
   \end{itemize}
-  Advisor: \cmlong.
+  Supervisor: \cmlong.
 }
 
 \cventry{2015}{The Non-Commutative A-Ideal of the Three-Twist Knot}{\gt}{}{}{
   \begin{itemize}
     \item Did skein computations in the complement of the knot.
   \end{itemize}
-  Advisor: \rglong.
+  Supervisor: \rglong.
 }
 
-% \newpage
-\pagebreak
+\fi
+
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Work}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Software Developing}
 
-\cventry{2016--2017}{\led}{Literate Programming System}{}{}
-{\begin{itemize}
-\item Implemented the \ledlong \\ by automating its translation
-  into the functional programming language \sllang.
-\item Implemented an \led-to-\tex{} translator.
-\end{itemize}
-Supervisor: \nrlong.}
+\cventry{2016--2017}{\led}{Literate Programming System}{}{}{
+  \begin{itemize}
+    \item Implemented the \ledlong \\ by automating its translation
+      into the functional programming language \sllang.
+    \item Implemented an \led-to-\tex{} translator.
+  \end{itemize}
+  Supervisor: \nrlong.
+}
 
-\cventry{2016}{\kn}{Computer Algebra System}{}{}
-{\begin{itemize}
-\item Designed the procedural programming language \kn{} for knot theory.
-\item Implemented \kn{} by automating its symbolic computation and
-  \tex{} printing.
-\item Implementing additional knot-theoretic operations in \kn.
-\end{itemize}
-Supervisor: \rglong.}
+\cventry{2016}{\kn}{Computer Algebra System}{}{}{
+  \begin{itemize}
+    \item Designed the procedural programming language \kn{} for knot theory.
+    \item Implemented \kn{} by automating its symbolic computation and
+      \tex{} printing.
+    \item Implementing additional knot-theoretic operations in \kn.
+  \end{itemize}
+  Supervisor: \rglong.
+}
 
-\cventry{2015--2016}{\llang}{\lp{} Engine}{\underline{NASA Research Grant}}{}
-{\begin{itemize}
-\item Implemented the language \llang{} by automating its translation
-  into \aplong.
-\end{itemize}
-Supervisor: \nrlong.}
+\cventry{2015--2016}{\llang}{\lp{} Engine}{}{}{
+  \begin{itemize}
+    \item Implemented the language \llang{} by automating its translation
+      into \aplong.
+  \end{itemize}
+  Supervisor: \nrlong.
+}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Tutoring}
 
-\cventry{2017, 2015}{\cs, \maths, Physics, Chemistry}{}{}{}{Supervisor: \pblong}
+\cventry{2015, 2017}{\cs, \maths, Physics, Chemistry}{}{}{}{Supervisor: \pblong}
 
-\cventry{2014}{\maths, Physics, Chemistry}{}{}{}{Supervisor: \dkeetonlong}
+% \cventry{2014}{\maths, Physics, Chemistry}{}{}{}{Supervisor: \dkeetonlong}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\iffalse
 \section{\maths{} Contests}
 
-\cventry{2016}{\putnam}{\maa}{}{}
-{\begin{itemize}
-\item Participated (rank 733/4164, score 20/120).
-% \item Submitted solutions for problems A1/B3 (complete) and A2/B5 (partial).
-\end{itemize}}
+\cventry{2016}{\putnam}{\maa}{}{}{
+  \begin{itemize}
+    \item Participated (rank 733/4164, score 20/120).
+    % \item Submitted solutions for problems A1/B3 (complete) and A2/B5 (partial).
+  \end{itemize}
+}
 
-\cventry{2013--2014}{\sml}{\amatyc}{}{}
-{\begin{itemize}
-\item Won Southwest Region (AZ, NM, OK, TX) \\
-in 2012-2013 (round 2) and 2013-2014 (round 2 \& aggregate).
-\end{itemize}}
+\cventry{2013--2014}{\sml}{\amatyc}{}{}{
+  \begin{itemize}
+  \item Won Southwest Region (AZ, NM, OK, TX) \\
+    in 2012-2013 (round 2) and 2013-2014 (round 2 \& aggregate).
+  \end{itemize}
+}
 
-\cventry{2013}{\maths{} Competition}{\cc}{}{}
-{\begin{itemize}
-\item Won Precalculus Section.
-\end{itemize}}
+\cventry{2013}{\maths{} Competition}{\cc}{}{}{
+  \begin{itemize}
+    \item Won Precalculus Section.
+  \end{itemize}
+}
+
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{\sch s}
 
-\cventry{2017--present}{\phd{} Full Tuition Waiver \& Stipend}
-  {\cs{} Department}{\rice}{}{}
+\cventry{2017--present}{\phd{} Full Tuition Waiver \& Stipend}{\cs{} Department}{\rice}{}{}
 \cventry{2016--2017}{General \sch}{\fao}{\ttu}{}{}
 \cventry{2015--2017}{Academic Achievement \sch}{\cas}{\ttu}{}{}
 \cventry{2015--2017}{\und{} Achievement \sch}{\mathsd}{\ttu}{}{}
@@ -171,60 +207,82 @@ in 2012-2013 (round 2) and 2013-2014 (round 2 \& aggregate).
 \cventry{2014--2016}{Proven Achiever \sch}{\fao}{\ttu}{}{}
 \cventry{2013--2014}{Excellence \sch}{\mathsd}{\cc}{}{}
 
-% \newpage
-\pagebreak
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Courses}
 
-\cventry{2017\\Spring}{Abstract Algebra 2}{}{}{}{Instructor: \dmlong}
-\cventry{2016\\Fall}{Databases}{}{}{}{Instructor: \nrlong}
-\cventry{2016\\Spring}{Algorithms}{}{}{}{Instructor: \mglong}
-\cventry{2015\\Fall}{\ma{} 2}{}{}{}{Instructor: \rglong}
-\cventry{2015\\Spring}{Automata}{}{}{}{Instructor: \mglong}
-\cventry{2015\\Spring}{Programming 1}{}{}{}{Instructor: \nrlong}
-\cventry{2014\\Fall}{Proofs}{}{}{}{Instructor: \cmlong}
+% \begin{itemize}
+%   \item 2018 Fall:
+%     \begin{itemize}
+%       \item Artificial Intelligence
+%     \end{itemize}
+%   \item 2018 Spring:
+%     \begin{itemize}
+%       \item Principles of Programming Languages
+%       \item Automated Program Verification
+%     \end{itemize}
+%   \item 2017 Fall:
+%     \begin{itemize}
+%       \item Advanced Logic in Computer Science
+%     \end{itemize}
+% \end{itemize}
+
+\cventry{2018 Fall}{Artificial Intelligence}{}{}{}{}
+\cventry{2018 Spring}{Principles of Programming Languages}{}{}{}{}
+\cventry{2018 Spring}{Automated Program Verification}{}{}{}{}
+\cventry{2017 Fall}{Advanced Logic in Computer Science}{}{}{}{}
+
+% \cventry{2017\\Spring}{Abstract Algebra 2}{}{}{}{Instructor: \dmlong}
+% \cventry{2016\\Fall}{Databases}{}{}{}{Instructor: \nrlong}
+% \cventry{2016\\Spring}{Algorithms}{}{}{}{Instructor: \mglong}
+% \cventry{2015\\Fall}{\ma{} 2}{}{}{}{Instructor: \rglong}
+% \cventry{2015\\Spring}{Automata}{}{}{}{Instructor: \mglong}
+% \cventry{2015\\Spring}{Programming 1}{}{}{}{Instructor: \nrlong}
+% \cventry{2014\\Fall}{Proofs}{}{}{}{Instructor: \cmlong}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\iffalse
 \section{Standardized Tests}
 
 \setlength{\tabcolsep}{4pt}
 
-\cventry{2015}{GRE (Graduate Record Examination)}{General Test}{}{}
-{\texttt{\begin{tabular}{l|c|r}
-section       & score       & percentile \\ \toprule
-Quantitative  & 168~~~/~170 & 95 \\ \hline
-Verbal        & 153~~~/~170 & 60 \\ \hline
-Writing       & ~~3.5~/~~~6 & 42
-\end{tabular}}}
+\cventry{2015}{GRE (Graduate Record Examination)}{General Test}{}{}{\texttt{
+  \begin{tabular}{l|c|r}
+    section       & score       & percentile \\ \toprule
+    Quantitative  & 168~~~/~170 & 95 \\ \hline
+    Verbal        & 153~~~/~170 & 60 \\ \hline
+    Writing       & ~~3.5~/~~~6 & 42
+  \end{tabular}
+}}
 
-\cventry{2012}{TOEFL (Test of English as a Foreign Language)}
-{Internet-Based Test}{}{}
-{\texttt{\begin{tabular}{l|rrr}
-Total     & 104 &/& 120 \\ \midrule
-Reading   & 29  &/& 30 \\ \hline
-Listening & 28  &/& 30 \\ \hline
-Writing   & 24  &/& 30 \\ \hline
-Speaking  & 23  &/& 30
-\end{tabular}}}
+\cventry{2012}{TOEFL (Test of English as a Foreign Language)}{Internet-Based Test}{}{}{\texttt{
+  \begin{tabular}{l|rrr}
+    Total     & 104 &/& 120 \\ \midrule
+    Reading   & 29  &/& 30 \\ \hline
+    Listening & 28  &/& 30 \\ \hline
+    Writing   & 24  &/& 30 \\ \hline
+    Speaking  & 23  &/& 30
+  \end{tabular}
+}}
+
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Computer Skills}
 \begin{itemize}
-\item \pl:
-  \begin{itemize}
-  \item Procedural: \kn{} (my design \& implementation),
-    \python/\java/\cpp/\clang, \assembly
-  \item Logic: \llang{} (my implementation), \sparc/\clingo/\dlv
-  \item Literate: \led{} (my implementation)
-  \item Functional: \sllang, \scala, \scheme
-  \item Formatting: \tex, \html
-  \item Data: \sql
-  \end{itemize}
-\item Tools: Git/GitHub, Linux/Windows shells
+  \item \pl:
+    \begin{itemize}
+      \item Procedural: \kn{} (my design \& implementation),
+        \python/\java/\cpp/\clang, \assembly
+      \item Logic: \llang{} (my implementation), \sparc/\clingo/\dlv
+      \item Literate: \led{} (my implementation)
+      \item Functional: \sllang, \scala, \scheme
+      \item Formatting: \tex, \html
+      \item Data: \sql
+    \end{itemize}
+  \item Tools: Git/GitHub, Linux/Windows shells
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
