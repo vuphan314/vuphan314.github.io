@@ -1,0 +1,145 @@
+\usepackage{algpseudocode}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{breqn}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{mdframed}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{soul}
+\usepackage{tabularx}
+\usepackage{verbatim}
+\usepackage{wrapfig}
+
+\theoremstyle{definition} % non-italic
+
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes,arrows}
+
+\usepackage{tikz-qtree}
+
+\usepackage[linesnumbered, ruled]{algorithm2e}
+\SetCommentSty{}
+\SetKwIF{If}{ElseIf}{Else}{if}{}{else if}{else}{}
+\SetKwFor{For}{for}{}{}
+\SetKwFor{While}{while}{}{}
+\SetKwRepeat{DoWhile}{do}{while}
+
+\usepackage{color}
+\newcommand{\black}[1]{\textcolor{black}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\brown}[1]{\textcolor{brown}{#1}}
+\newcommand{\cyan}[1]{\textcolor{cyan}{#1}}
+\newcommand{\darkgray}[1]{\textcolor{darkgray}{#1}}
+\newcommand{\gray}[1]{\textcolor{gray}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\lightgray}[1]{\textcolor{lightgray}{#1}}
+\newcommand{\lime}[1]{\textcolor{lime}{#1}}
+\newcommand{\magenta}[1]{\textcolor{magenta}{#1}}
+\newcommand{\olive}[1]{\textcolor{olive}{#1}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\pink}[1]{\textcolor{pink}{#1}}
+\newcommand{\purple}[1]{\textcolor{purple}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\teal}[1]{\textcolor{teal}{#1}}
+\newcommand{\violet}[1]{\textcolor{violet}{#1}}
+\newcommand{\white}[1]{\textcolor{white}{#1}}
+\newcommand{\yellow}[1]{\textcolor{yellow}{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% math
+
+\newcommand{\bigO}[1]{\text{O}\pars{#1}}
+\newcommand{\bigOmega}[1]{\Omega\pars{#1}}
+\newcommand{\bigTheta}[1]{\Theta\pars{{#1}}}
+
+%% material operators
+\newcommand{\mnot}{\lnot}
+\newcommand{\mand}{\land}
+\newcommand{\mor}{\lor}
+\newcommand{\mimplies}{\rightarrow}
+\newcommand{\miff}{\leftrightarrow}
+
+\newcommand{\set}[1]{\braces{#1}}
+\newcommand{\sete}{\varnothing}
+
+\newcommand{\setc}[1]{\overline{#1}}
+\newcommand{\setu}{\cup}
+\newcommand{\seti}{\cap}
+\newcommand{\setd}{\setminus}
+\newcommand{\sets}{\subseteq}
+\newcommand{\setsp}{\subset}
+
+%% logical operators
+\newcommand{\impl}{\Rightarrow}
+\newcommand{\equi}{\Leftrightarrow}
+
+%% numbers
+\newcommand{\Set}[1]{\mathbb{#1}}
+\newcommand{\B}{\Set{B}}
+\newcommand{\N}{\Set{N}}
+\newcommand{\Z}{\Set{Z}}
+\newcommand{\Q}{\Set{Q}}
+\newcommand{\R}{\Set{R}}
+\newcommand{\C}{\Set{C}}
+
+%% surrounders
+\newcommand{\mat}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+\newcommand{\pars}[1]{\left( #1 \right)}
+\newcommand{\braces}[1]{\left\{ #1 \right\}}
+\newcommand{\angles}[1]{\langle #1 \rangle}
+\newcommand{\brackets}[1]{\left[ #1 \right]}
+\newcommand{\pipes}[1]{\left| #1 \right|}
+\newcommand{\floors}[1]{\lfloor #1 \rfloor}
+\newcommand{\ceils}[1]{\lceil #1 \rceil}
+
+%% containers
+\newcommand{\seq}[1]{\angles{#1}}
+\newcommand{\size}[1]{\pipes{#1}}
+
+\renewcommand{\phi}{\varphi}
+
+\newcommand{\forward}{$\pars{\Longrightarrow}$}
+\newcommand{\backward}{$\pars{\Longleftarrow}$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% formatting
+
+\newcommand{\wrt}{w.r.t.}
+\newcommand{\eg}{e.g.}
+\newcommand{\ie}{i.e.}
+
+\newcommand{\framed}[1]{\begin{mdframed} #1 \end{mdframed}}
+\newcommand{\todo}[1]{\framed{\Huge TODO #1}}
+
+\newcommand{\textdef}[1]{\textbf{#1}}
+\newcommand{\textseq}[1]{\bm{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+
+\newcommand{\quotes}[1]{``#1''}
+
+\newcommand{\vpHomepage}{\url{https://vuphan314.github.io}}
+
+\newcommand{\vp}{Vu Phan}
+\newcommand{\vplong}{Vu Hoang Nguyen Phan}
+
+\newcommand{\devika}{Devika Subramanian}
+\newcommand{\jd}{Jeffrey Dudek}
+\newcommand{\mv}{Moshe Vardi}
+\newcommand{\swarat}{Swarat Chaudhuri}
+
+\newcommand{\prefix}[2]{{#1}.~{#2}}
+\newcommand{\dr}[1]{\prefix{Dr}{#1}}
+\newcommand{\mr}[1]{\prefix{Mr}{#1}}
+
+\newcommand{\phd}{Ph.D.}
+\newcommand{\bs}{B.S.}
+
+\newcommand{\cs}{Computer Science}
+\newcommand{\maths}{Math}

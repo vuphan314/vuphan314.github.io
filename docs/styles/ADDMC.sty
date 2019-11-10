@@ -1,0 +1,66 @@
+\newcommand{\makeadd}[1]{\texttt{ADD}\pars{#1}}
+
+\newcommand{\heuristic}[1]{\textbf{#1}}
+
+\newcommand{\Mono}{\heuristic{Mono}}
+\newcommand{\Linear}{\heuristic{Linear}}
+\newcommand{\Be}{\heuristic{BE}}
+\newcommand{\Bm}{\heuristic{BM}}
+
+\newcommand{\ListH}{\heuristic{List}}
+\newcommand{\TreeH}{\heuristic{Tree}}
+
+\newcommand{\Random}{\heuristic{Random}}
+\newcommand{\Mcs}{\heuristic{MCS}}
+\newcommand{\Lexp}{\heuristic{LexP}}
+\newcommand{\Lexm}{\heuristic{LexM}}
+\newcommand{\Invmcs}{\heuristic{InvMCS}}
+\newcommand{\Invlexp}{\heuristic{InvLexP}}
+\newcommand{\Invlexm}{\heuristic{InvLexM}}
+
+\newcommand{\heuristicConfigCount}{245} % |{Mono, BE-List, BE-Tree, BM-List, BM-Tree}| * |{Random, MCS, LexP, LexM, InvMCS, InvLexP, InvLexM}|^2
+
+\newcommand{\class}[1]{\textbf{#1}}
+\newcommand{\family}[1]{\emph{#1}}
+
+\newcommand{\classWeighted}{\class{Weighted}}
+\newcommand{\famDqmr}{\family{Deterministic Quick Medical Reference}}
+\newcommand{\famGrid}{\family{Grid Networks}}
+\newcommand{\famPlanRec}{\family{Plan Recognition}}
+
+\newcommand{\classUnweighted}{\class{Unweighted}}
+\newcommand{\famBmc}{\family{Bounded Model Checking}}
+\newcommand{\famCircuit}{\family{Circuit}}
+\newcommand{\famConfig}{\family{Configuration}}
+\newcommand{\famHandmade}{\family{Handmade}}
+\newcommand{\famPlanning}{\family{Planning}}
+\newcommand{\famQif}{\family{Quantitative Information Flow}}
+\newcommand{\famRandom}{\family{Random}}
+\newcommand{\famSchedule}{\family{Scheduling}}
+
+\newcommand{\benchmarkCountWeighted}{1091}
+\newcommand{\benchmarkCountUnweighted}{823}
+\newcommand{\benchmarkCountAltogether}{1914}
+
+\newcommand{\timeoutHeuristics}{10}
+\newcommand{\timeoutCounters}{1000}
+
+\newcommand{\tool}[1]{\texttt{#1}}
+
+\newcommand{\addmc}{\tool{ADDMC}}
+\newcommand{\cachet}{\tool{Cachet}}
+\newcommand{\ctd}{\tool{c2d}}
+\newcommand{\cudd}{\tool{CUDD}}
+\newcommand{\df}{\tool{d4}}
+\newcommand{\minictd}{\tool{miniC2D}}
+\newcommand{\reasoner}{\tool{d-DNNF-reasoner}}
+\newcommand{\sharpsat}{\tool{sharpSAT}}
+\newcommand{\sylvan}{\tool{Sylvan}}
+
+\newcommand{\vbs}{\tool{VBS}}
+\newcommand{\vbss}{\tool{VBS$^*$}}
+
+\newcommand{\weightedcounters}{\cachet, \ctd, \df, and \minictd}
+\newcommand{\unweightedcounters}{\cachet, \ctd, \df, \minictd, and \sharpsat}
+
+\newcommand{\addmcRepo}{\url{https://github.com/vardigroup/ADDMC}}
