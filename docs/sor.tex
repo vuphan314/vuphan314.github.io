@@ -1,102 +1,71 @@
 \documentclass[letterpaper, 12pt]{extarticle}
 
-\usepackage[scale=.85]{geometry}
+\usepackage[scale=.79]{geometry}
 
 \linespread{2}
 
-\usepackage{titlesec}
-\titlelabel{(\thetitle) }
+\usepackage{STYs/common}%.sty
+\usepackage{STYs/ADDMC}%.sty
+\usepackage{STYs/docs}%.sty
 
-\usepackage{styles/common}%.sty
-\usepackage{styles/ADDMC}%.sty
-\usepackage{styles/docs}%.sty
+% \rfoot{Page \thepage{} of \pageref{LastPage}}
 
-\usepackage[bookmarksnumbered]{hyperref}
+\usepackage[bookmarksnumbered,hidelinks]{hyperref}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
 % \textbf{Latest version}: \vpHomepage \\ This version:
-2019/11/10 \myskipbig
+% 2019/11/12
 
-\textbf{STATEMENT OF RESEARCH} \\ \vp \myskipbig
+\begin{center}
+  \textbf{STATEMENT OF RESEARCH} \\
+  \vp
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+I started my Ph.D. program in Computer Science at Rice University in 2017.
+I expect to finish my Master's degree by December 2019 and my Ph.D. degree by May 2022.
+The general theme of my research interests is artificial intelligence.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-I am a \phd{} student in \cs{} at \rice{} (2017 - c. 2022).
+\section{Past Research: Logic Programming}
+
+During 2015-2016, under the supervision of Dr. Nelson Rushton at Texas Tech University, I participated in a NASA-funded project.
+He designed the logic programming language \llang{} to encode NASA safety-critical procedures.
+I implemented \llang{} by automating its translation into \aplong{} (another logic programming language whose solver was already built) \cite{b_aprolog}.
+
+During 2016-2018, guided by Dr. Michael Gelfond at Texas Tech University, I investigated \cplong, a more expressive logic programming language \cite{b_crprolog}.
+In particular, a \cp{} program is said to have antichain property if none of its answer set is a proper subset of another.
+The problem was to find syntactic conditions which guarantee this semantically desirable property.
+One such condition was found: the program's dependency graph being acyclic and having no directed path from one cr-rule-head-vertex to another \cite{phan2018syntactic}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\myrule
 
-\section{\pl}
+\section{Current Research: Boolean Model Counting}
 
-In 2015/Summer, I started my first project in \pl{} under
-the supervision of \nrlong.
-This project was part of a NASA research contract with \kt,
-\hi, and us.
-\nr{} designed the logic programming language \llang{}
-to encode NASA safety-critical procedures.
-I implemented \llang{} by automating its translation into
-\aplong{}
-(another logic programming language
-whose solver was already built).
-In 2016/Spring, the project was completed.
-The NASA \textit
-{Disclosure of Invention and New Technology}
-titled \disclosureNASA{}
-recognized six innovators:
-\nr, three other doctorate holders,
-a \phd{} student, and me.
-
-\myskip
-
-In 2016/Spring, my second project in \pl{} with \nr{} was started.
-He designed the \ledlong{} for literate programming
-(inspired by the \code{WEB} system of \dknuth).
-I implemented the executing aspect of \led{}
-by automating its translation into the functional programming language \sllang.
-To implement the formatting aspect,
-I am developing an \led-to-\tex{} translator.
-
-\newpage
-
-In 2016/Fall, I started another project in \pl,
-this time with \rglong.
-This project is inspired by our
-knot theory research back in 2015/Spring,
-when we studied
-the non-commutative A-ideal of the three-twist knot
-by manually doing skein computations.
-I want to automate these computations
-by developing a computer algebra system.
-So I designed the procedural programming language \kn.
-Then I implemented \kn{}
-using \code{SymPy} (a \python{} library)
-for symbolic computation and \tex{} printing.
-I am now implementing additional knot-theoretic operations
-as \kn{} built-in functions.
-
-\section{\ai}
-
-In 2016/Summer, I started writing an \ai{} research paper
-under the guidance of \mglong.
-We investigate \cplong{},
-which is a superset of the logic programming language \aplong{}
-(whose stable model semantics was defined by \mg{} and \vl).
-In detail, a \cp{} program is said to have
-antichain property if
-none of its answer set is a proper subset of another.
-The problem is to find syntactic conditions
-which guarantee this semantically desirable property.
-We discovered such a sufficient condition which is
-reasonably weak:
-the program's dependency graph
-being acyclic and
-having no directed path from one cr-rule-head-vertex to
-another.
-I am revising the paper before submitting for publication.
+In 2017, I started working with Dr. Moshe Vardi and Jeffrey Dudek at Rice University.
+We study Boolean model counting, a fundamental \#P-complete problem \cite{valiant79}.
+We developed an algorithm to solve the model counting problem more efficiently using algebraic decision diagrams \cite{BFGHMPS97}, dynamic programming \cite{howard66}, and early projection \cite{MPPV04}.
+I implemented the algorithm to produce \addmc, a new tool for model counting.
+I compared \addmc{} to four existing state-of-the-art model counters: \cachet{} \cite{SBBK04}, \ctd{} \cite{darwiche2004new}, \minictd{} \cite{OD15}, and \df{} \cite{lagniez2017improved}.
+\addmc{} was shown to be competitive \cite{addmcAaai}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Future Research: Related Counting Problems}
+
+I plan to evaluate two potential improvements to \addmc, our model counting tool.
+First, \addmc{} can benefit from additional efficient data structures, including affine algebraic decision diagrams \cite{sanner2005affine} and AND/OR multi-valued decision diagrams \cite{mateescu2008and}.
+Second, the heuristics \addmc{} uses may be improved with tree-decomposition techniques, which have been shown to make the \#P-hard problem of tensor-network contraction more tractable \cite{dudek2019efficient}.
+Another future research direction is to assess \addmc-like frameworks (efficient data structure, dynamic programming, and early projection) on problems related to model counting such as Bayesian inference \cite{pearl1985bayesian}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{apalike}
+\bibliography{BIBs/ADDMC,BIBs/crprolog}%.bib
 
 \end{document}
