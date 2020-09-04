@@ -9,9 +9,23 @@
 
 \usepackage[scale=.9]{geometry}
 
+\setlength{\hintscolumnwidth}{80pt} % if you want to change the width of the column with the dates
+
 \usepackage{STYs/common}%.sty
-\usepackage{STYs/ADDMC}%.sty
 \usepackage{STYs/docs}%.sty
+\usepackage{STYs/ADDMC}%.sty
+
+\usepackage[sorting=none, citestyle=alphabetic, bibstyle=alphabetic]{biblatex}
+\addbibresource{BIBs/18aspocp.bib}
+\addbibresource{BIBs/18fecs.bib}
+\addbibresource{BIBs/19ms.bib}
+\addbibresource{BIBs/20aaai.bib}
+\addbibresource{BIBs/20cp.bib}
+\nocite{phan_2019_weighted}
+\nocite{dudek_phan_vardi_2020_dpmc}
+\nocite{dudek_phan_vardi_2020_addmc}
+\nocite{rushton_phan_2018_discrete}
+\nocite{phan_2018_syntactic}
 
 \rfoot{Page \thepage{} of \pageref{LastPage}}
 
@@ -20,12 +34,8 @@
 % \renewcommand{\familydefault}{\sfdefault}
 %% to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 
-\setlength{\hintscolumnwidth}{1.2in}
-%% if you want to change the width of the column with the dates
-
-\name{Vu H. N.}{Phan}
-
-\title{CV}
+\name{Vu Hoang Nguyen}{Phan, M.S.}
+\title{Curriculum Vitae}
 
 %% pdf will be in following order; can't be changed
 % \address{}
@@ -42,194 +52,182 @@
 
 \begin{document}
 
-\textbf{Latest version}: \vpHomepage \\ This version: 2020/04/09
+\textbf{Latest version}: \vpHomepage \\ This version: 2020/09/03
 
 \makecvtitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Education}
-
 \cventry{2017/08--present}{Doctor of Philosophy}{\cs}{\rice}{Houston TX}{
-  \begin{itemize}
-    \item \advisor{\mv}
-    \item Research: \cl
-    % \item GPA: 3.57 % 2020 Spring
-  \end{itemize}
+    \begin{itemize}
+        \item \advisor{\mv}
+        \item Research: \cl
+    \end{itemize}
 }
-
 \cventry{2017/08--2019/12}{Master of Science}{\cs}{\rice}{Houston TX}{
-  \begin{itemize}
-    \item \advisor{\mv}
-    \item Research: \cl
-    \item Thesis: Weighted Model Counting with Algebraic Decision Diagrams
-  \end{itemize}
+    \begin{itemize}
+        \item \advisor{\mv}
+        \item Research: \cl
+    \end{itemize}
 }
-
 \cventry{2014/08--2017/08}{Dual Bachelor of Science}{\cs{} \& \maths}{\ttu}{Lubbock TX}{
-  \begin{itemize}
-    \item \advisor{\mg}
-    \item Research: \lp
-    % \item GPA: 4.00
-  \end{itemize}
+    % \begin{itemize}
+    %     \item \advisor{\mg}
+    %     \item Research: \lp
+    % \end{itemize}
 }
-
-\cventry{2013/01--2014/08}{Associate of Science}{}{\cc}{Plano TX}{
-  % \begin{itemize}
-  %   \item \advisor{\ag}
-  %   \item Research: \ma
-  %   \item GPA: 4.00
-  % \end{itemize}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Research}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Published}
-
-\cventry{2018--2020}{ADDMC: Weighted Model Counting with Algebraic Decision Diagrams}{}{}{}{
-  \begin{itemize}
-    \item Employed dynamic programming to develop the exact model counting framework \addmc{} \\
-      with \jd{} and \mv.%
-    \item Presented our paper at the AAAI conference in New York City on 2020/02/11.%
-  \end{itemize}
-  Supervisor: \mvlong.%
-}
-
-\cventry{2016--2018}{Syntactic Conditions for Antichain Property in \cp}{}{}{}{
-  \begin{itemize}
-    \item Found syntactic conditions guaranteeing when \cplong{} programs \\
-      have antichain property (no answer set is a proper subset of another).%
-    \item Presented my paper at the ASPOCP workshop (affiliated with ICLP, part of FLoC) \\
-      in Oxford on 2018/07/18.%
-  \end{itemize}
-  Supervisor: \mglong.%
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Unpublished}
-
-\cventry{2013--2017}{Biquasiarithmetic Mean Comparability}{}{}{}{
-  \begin{itemize}
-    \item Generalized a theorem on inequalities involving quasiarithmetic means.%
-    \item Resubmitted my paper to the \rh{} in 2017 \\
-      (previously submitted in 2013 \& 2014).%
-    \item Presented my paper at the \tumc{} in San Antonio on 2013/10/26.%
-  \end{itemize}
-  Supervisor: \aglong.%
-}
-
-\iffalse %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Projects}
-
-\cventry{2017}{Inverse Game of Life}{\ct}{}{}{
-  \begin{itemize}
-    \item Investigated the time complexity to invert Conway's Game of Life.%
-  \end{itemize}
-  Supervisor: \cmlong.%
-}
-
-\cventry{2015}{The Non-Commutative A-Ideal of the Three-Twist Knot}{\gt}{}{}{
-  \begin{itemize}
-    \item Did skein computations in the complement of the knot.%
-  \end{itemize}
-  Supervisor: \rglong.%
-}
-
-\fi %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Experience}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Software Developing}
-
-\cventry{2016--2017}{\led}{Literate Programming System}{}{}{
-  \begin{itemize}
-    \item Implemented the \ledlong \\ by automating its translation into the functional programming language \sllang.%
-    \item Implemented an \led-to-\tex{} translator.%
-  \end{itemize}
-  Supervisor: \nrlong.%
-}
-
-% \cventry{2016}{\kn}{Computer Algebra System}{}{}{
-%   \begin{itemize}
-%     \item Designed the procedural programming language \kn{} for knot theory.%
-%     \item Implemented \kn{} by automating its symbolic computation and \tex{} printing.%
-%   \end{itemize}
-%   Supervisor: \rglong.%
+% \cventry{2013/01--2014/08}{Associate of Science}{}{\cc}{Plano TX}{
+%     \begin{itemize}
+%         \item \advisor{\ag}
+%         \item Research: \ma
+%     \end{itemize}
 % }
 
-\cventry{2015--2016}{\llang}{\lp{} Engine}{}{}{
-  \begin{itemize}
-    \item Implemented the language \llang{} by automating its translation into \aplong.%
-  \end{itemize}
-  Supervisor: \nrlong.%
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Tutoring}
 
-\cventry{2015, 2017}{\cs, \maths, Physics, Chemistry}{}{}{}{Supervisor: \pblong}
-
-\cventry{2014}{\maths, Physics, Chemistry}{}{}{}{Supervisor: \dkeetonlong}
-
-\iffalse %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printbibheading[title={Publication}]
+Except for \cite{rushton_phan_2018_discrete}, \vp{} is the corresponding author.
+\printbibliography[type=thesis, heading=subbibliography, title={Thesis}]
+\printbibliography[keyword=conference, heading=subbibliography, title={Conference Papers}]
+\printbibliography[keyword=workshop, heading=subbibliography, title={Workshop Paper}]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\maths{} Contests}
-
-\cventry{2016}{\putnam}{\maa}{}{}{
-  \begin{itemize}
-    \item Participated (rank 733/4164, score 20/120).%
-    % \item Submitted solutions for problems A1/B3 (complete) and A2/B5 (partial).%
-  \end{itemize}
-}
-
-\cventry{2013--2014}{\sml}{\amatyc}{}{}{
-  \begin{itemize}
-  \item Won Southwest Region (AZ, NM, OK, TX) \\
-    in 2012-2013 (round 2) and 2013-2014 (round 2 \& aggregate).%
-  \end{itemize}
-}
-
-\cventry{2013}{\maths{} Competition}{\cc}{}{}{
-  \begin{itemize}
-    \item Won Precalculus Section.%
-  \end{itemize}
-}
-
-\fi %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Research}
+%
+% \subsection{Published}
+% \cventry{2018--2020}{ADDMC: Weighted Model Counting with Algebraic Decision Diagrams}{}{}{}{
+%     \begin{itemize}
+%         \item Employed dynamic programming to develop the exact model counting framework \addmc{} \\
+%             with \jd{} and \mv.
+%         \item Presented our paper at the AAAI conference in New York City on 2020/02/11.
+%     \end{itemize}
+%     Supervisor: \mvlong.
+% }
+% \cventry{2016--2018}{Syntactic Conditions for Antichain Property in \cp}{}{}{}{
+%     \begin{itemize}
+%         \item Found syntactic conditions guaranteeing when \cplong{} programs \\
+%             have antichain property (no answer set is a proper subset of another).
+%         \item Presented my paper at the ASPOCP workshop (affiliated with ICLP, part of FLoC) \\
+%             in Oxford on 2018/07/18.
+%     \end{itemize}
+%     Supervisor: \mglong.
+% }
+%
+% \subsection{Unpublished}
+% \cventry{2013--2017}{Biquasiarithmetic Mean Comparability}{}{}{}{
+%     \begin{itemize}
+%         \item Generalized a theorem on inequalities involving quasiarithmetic means.
+%         \item Resubmitted my paper to the \rh{} in 2017 \\
+%             (previously submitted in 2013 \& 2014).
+%         \item Presented my paper at the \tumc{} in San Antonio on 2013/10/26.
+%     \end{itemize}
+%     Supervisor: \aglong.
+% }
+%
+% \subsection{Projects}
+% \cventry{2017}{Inverse Game of Life}{\ct}{}{}{
+%     \begin{itemize}
+%         \item Investigated the time complexity to invert Conway's Game of Life.
+%     \end{itemize}
+%     Supervisor: \cmlong.
+% }
+% \cventry{2015}{The Non-Commutative A-Ideal of the Three-Twist Knot}{\gt}{}{}{
+%     \begin{itemize}
+%         \item Did skein computations in the complement of the knot.
+%     \end{itemize}
+%     Supervisor: \rglong.
+% }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\sch s}
-
-\cventry{2017--present}{\phd{} Student Tuition \& Stipend}{\cs{} Department}{\rice}{}{}
-\cventry{2016--2017}{General \sch}{\fao}{\ttu}{}{}
-\cventry{2015--2017}{Academic Achievement \sch}{\cas}{\ttu}{}{}
-\cventry{2015--2017}{\und{} Achievement \sch}{\mathsd}{\ttu}{}{}
-\cventry{2015--2016}{\und{} Research \sch}{\mathsd}{\ttu}{}{}
-\cventry{2014--2016}{Proven Achiever \sch}{\fao}{\ttu}{}{}
-\cventry{2013--2014}{Excellence \sch}{\mathsd}{\cc}{}{}
+\clearpage
+\section{Software Development}
+\cventry{2019--2020}{\tool{DPMC}}{Dynamic-Programming Model Counter}{\url{github.com/vardigroup/DPMC}}{}{
+    \begin{itemize}
+        \item Implemented the model-counting framework in \cite{dudek_phan_vardi_2020_dpmc} with \jd.
+    \end{itemize}
+    Supervisor: \mvlong.
+}
+\cventry{2018--2020}{\addmc}{Algebraic-Decision-Diagram Model Counter}{\url{github.com/vardigroup/ADDMC}}{}{
+    \begin{itemize}
+        \item Implemented the model counter in \cite{dudek_phan_vardi_2020_addmc,phan_2019_weighted}.
+    \end{itemize}
+    Supervisor: \mvlong.
+}
+\cventry{2016--2017}{\led}{Literate Programming System}{\url{vuphan314.github.io/LED}}{}{
+    \begin{itemize}
+        \item Implemented the \ledlong{} in \cite{rushton_phan_2018_discrete} \\ by automating its translation into the functional programming language \sllang.
+        \item Implemented an \led-to-\tex{} translator.
+    \end{itemize}
+    Supervisor: \nrlong.
+}
+% \cventry{2016}{\kn}{Computer Algebra System}{}{}{
+%     \begin{itemize}
+%         \item Designed the procedural programming language \kn{} for knot theory.
+%         \item Implemented \kn{} by automating its symbolic computation and \tex{} printing.
+%     \end{itemize}
+%     Supervisor: \rglong.
+% }
+\cventry{2015--2016}{\llang}{\lp{} Engine}{\url{github.com/iensen/LtoASPtranslator}}{}{
+    \begin{itemize}
+        \item Implemented the language \llang{} by automating its translation into \aplong.
+    \end{itemize}
+    Supervisor: \nrlong.
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Courses}
+\section{Computer Skills}
 
+\subsection{Programming Languages}
+\cventry{Procedural}{\python, \cpp, \java}{}{}{}{}
+\cventry{Functional}{\scala, \scheme}{}{}{}{}
+\cventry{Logic}{\sparc, \clingo, \dlv}{}{}{}{}
+\cventry{Data}{\sql}{}{}{}{}
+\cventry{Formatting}{\tex, \html}{}{}{}{}
+
+\subsection{Tools}
+\cventry{Linux}{\tool{Bash}, \tool{Git}}{}{}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Tutoring}
+% \cventry{2015, 2017}{\cs, \maths, Physics, Chemistry}{}{}{}{Supervisor: \pblong}
+% \cventry{2014}{\maths, Physics, Chemistry}{}{}{}{Supervisor: \dkeetonlong}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{\maths{} Contests}
+% \cventry{2016}{\putnam}{\maa}{}{}{
+%     \begin{itemize}
+%         \item Participated (rank 733/4164, score 20/120).
+%         % \item Submitted solutions for problems A1/B3 (complete) and A2/B5 (partial).
+%     \end{itemize}
+% }
+% \cventry{2013--2014}{\sml}{\amatyc}{}{}{
+%     \begin{itemize}
+%     \item Won Southwest Region (AZ, NM, OK, TX) \\
+%         in 2012-2013 (round 2) and 2013-2014 (round 2 \& aggregate).
+%     \end{itemize}
+% }
+% \cventry{2013}{\maths{} Competition}{\cc}{}{}{
+%     \begin{itemize}
+%         \item Won Precalculus Section.
+%     \end{itemize}
+% }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Graduate Courses}
+\cventry{2020 Fall}{Bioinformatics: Sequence Analysis}{}{}{}{}
 \cventry{2020 Spring}{Statistical Machine Learning}{}{}{}{}
 \cventry{2019 Fall}{Computer Systems Architecture}{}{}{}{}
 \cventry{2019 Spring}{Compiler Construction; Multi-Core Computing}{}{}{}{}
 \cventry{2018 Fall}{Artificial Intelligence}{}{}{}{}
 \cventry{2018 Spring}{Automated Program Verification; Principles of Programming Languages}{}{}{}{}
-\cventry{2017 Fall}{Advanced Logic in Computer Science; Functional Programming}{}{}{}{}
-
+\cventry{2017 Fall}{Advanced Logic in Computer Science}{}{}{}{}
 % \cventry{2017\\Spring}{Abstract Algebra 2}{}{}{}{Instructor: \dmlong}
 % \cventry{2016\\Fall}{Databases}{}{}{}{Instructor: \nrlong}
 % \cventry{2016\\Spring}{Algorithms}{}{}{}{Instructor: \mglong}
@@ -238,49 +236,38 @@
 % \cventry{2015\\Spring}{Programming 1}{}{}{}{Instructor: \nrlong}
 % \cventry{2014\\Fall}{Proofs}{}{}{}{Instructor: \cmlong}
 
-\iffalse %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\sch s}
+\cventry{2017--present}{\phd{} Student Tuition \& Stipend}{\cs{} Department}{\rice}{}{}
+\cventry{2016--2017}{General \sch}{\fao}{\ttu}{}{}
+\cventry{2015--2017}{Academic Achievement \sch}{\cas}{\ttu}{}{}
+\cventry{2015--2017}{\und{} Achievement \sch}{\mathsd}{\ttu}{}{}
+\cventry{2015--2016}{\und{} Research \sch}{\mathsd}{\ttu}{}{}
+\cventry{2014--2016}{Proven Achiever \sch}{\fao}{\ttu}{}{}
+% \cventry{2013--2014}{Excellence \sch}{\mathsd}{\cc}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Standardized Tests}
-
-\setlength{\tabcolsep}{4pt}
-
-\cventry{2015}{GRE (Graduate Record Examination)}{General Test}{}{}{\texttt{
-  \begin{tabular}{l|c|r}
-    section       & score       & percentile \\ \toprule
-    Quantitative  & 168~~~/~170 & 95 \\ \hline
-    Verbal        & 153~~~/~170 & 60 \\ \hline
-    Writing       & ~~3.5~/~~~6 & 42
-  \end{tabular}
-}}
-
-\cventry{2012}{TOEFL (Test of English as a Foreign Language)}{Internet-Based Test}{}{}{\texttt{
-  \begin{tabular}{l|rrr}
-    Total     & 104 &/& 120 \\ \midrule
-    Reading   & 29  &/& 30 \\ \hline
-    Listening & 28  &/& 30 \\ \hline
-    Writing   & 24  &/& 30 \\ \hline
-    Speaking  & 23  &/& 30
-  \end{tabular}
-}}
-
-\fi %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Computer Skills}
-\begin{itemize}
-  \item Programming languages:
-    \begin{itemize}
-      \item Procedural: \python, \cpp, \java
-      \item Functional: \scala, \scheme
-      \item Logic: \sparc, \clingo, \dlv
-      \item Data: \sql
-      \item Formatting: \tex, \html
-    \end{itemize}
-  \item Tools: Git, Linux/Windows shells
-\end{itemize}
+% \section{Standardized Tests}
+% \setlength{\tabcolsep}{4pt}
+% \cventry{2015}{GRE (Graduate Record Examination)}{General Test}{}{}{\texttt{
+%     \begin{tabular}{l|c|r}
+%         section             & score             & percentile \\ \toprule
+%         Quantitative    & 168~~~/~170 & 95 \\ \hline
+%         Verbal                & 153~~~/~170 & 60 \\ \hline
+%         Writing             & ~~3.5~/~~~6 & 42
+%     \end{tabular}
+% }}
+% \cventry{2012}{TOEFL (Test of English as a Foreign Language)}{Internet-Based Test}{}{}{\texttt{
+%     \begin{tabular}{l|rrr}
+%         Total         & 104 &/& 120 \\ \midrule
+%         Reading     & 29    &/& 30 \\ \hline
+%         Listening & 28    &/& 30 \\ \hline
+%         Writing     & 24    &/& 30 \\ \hline
+%         Speaking    & 23    &/& 30
+%     \end{tabular}
+% }}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
