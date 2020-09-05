@@ -1,11 +1,8 @@
-\documentclass[12pt, letterpaper, sans]{moderncv}
-%% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[12pt, letterpaper, sans]{moderncv} % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
-\moderncvstyle{classic}
-%% style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvstyle{classic} % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
 
-\moderncvcolor{purple}
-%% color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\moderncvcolor{purple} % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
 
 \usepackage[scale=.9]{geometry}
 
@@ -15,7 +12,9 @@
 \usepackage{STYs/docs}%.sty
 \usepackage{STYs/ADDMC}%.sty
 
-\usepackage[sorting=none, citestyle=alphabetic, bibstyle=alphabetic]{biblatex}
+\newcommand{\citationstyle}{alphabetic}
+% \renewcommand{\citationstyle}{numeric}
+\usepackage[sorting=none, citestyle=\citationstyle, bibstyle=\citationstyle]{biblatex}
 \addbibresource{BIBs/18aspocp.bib}
 \addbibresource{BIBs/18fecs.bib}
 \addbibresource{BIBs/19ms.bib}
@@ -24,7 +23,7 @@
 \nocite{phan_2019_weighted}
 \nocite{dudek_phan_vardi_2020_dpmc}
 \nocite{dudek_phan_vardi_2020_addmc}
-\nocite{rushton_phan_2018_discrete}
+% \nocite{rushton_phan_2018_discrete}
 \nocite{phan_2018_syntactic}
 
 \rfoot{Page \thepage{} of \pageref{LastPage}}
@@ -52,32 +51,32 @@
 
 \begin{document}
 
-\textbf{Latest version}: \vpHomepage \\ This version: 2020/09/03
+\textbf{Latest version}: \vpHomepage \\ This version: 2020/09/04
 
 \makecvtitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Education}
-\cventry{2017/08--present}{Doctor of Philosophy}{\cs}{\rice}{Houston TX}{
+\cventry{2017/08--present}{Doctor of Philosophy}{\cs}{\rice}{Houston TX}{%
     \begin{itemize}
-        \item \advisor{\mv}
-        \item Research: \cl
+        \item \advisor{Prof. \mv}
+        \item Research interests: weighted model counting and related problems in probabilistic reasoning
     \end{itemize}
 }
-\cventry{2017/08--2019/12}{Master of Science}{\cs}{\rice}{Houston TX}{
-    \begin{itemize}
-        \item \advisor{\mv}
-        \item Research: \cl
-    \end{itemize}
+\cventry{2017/08--2019/12}{Master of Science}{\cs}{\rice}{Houston TX}{%
+    % \begin{itemize}
+    %     \item \advisor{\mv}
+    %     \item Research: \cl
+    % \end{itemize}
 }
-\cventry{2014/08--2017/08}{Dual Bachelor of Science}{\cs{} \& \maths}{\ttu}{Lubbock TX}{
+\cventry{2014/08--2017/08}{Dual Bachelor of Science}{\cs{} \& \maths}{\ttu}{Lubbock TX}{%
     % \begin{itemize}
     %     \item \advisor{\mg}
     %     \item Research: \lp
     % \end{itemize}
 }
-% \cventry{2013/01--2014/08}{Associate of Science}{}{\cc}{Plano TX}{
+% \cventry{2013/01--2014/08}{Associate of Science}{}{\cc}{Plano TX}{%
 %     \begin{itemize}
 %         \item \advisor{\ag}
 %         \item Research: \ma
@@ -86,8 +85,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\printbibheading[title={Publication}]
-Except for \cite{rushton_phan_2018_discrete}, \vp{} is the corresponding author.
+\printbibheading[title={Bibliography}]
+\vp{} is the corresponding author of the following publications%
+% , except for \cite{rushton_phan_2018_discrete}
+.
+
 \printbibliography[type=thesis, heading=subbibliography, title={Thesis}]
 \printbibliography[keyword=conference, heading=subbibliography, title={Conference Papers}]
 \printbibliography[keyword=workshop, heading=subbibliography, title={Workshop Paper}]
@@ -97,7 +99,7 @@ Except for \cite{rushton_phan_2018_discrete}, \vp{} is the corresponding author.
 % \section{Research}
 %
 % \subsection{Published}
-% \cventry{2018--2020}{ADDMC: Weighted Model Counting with Algebraic Decision Diagrams}{}{}{}{
+% \cventry{2018--2020}{ADDMC: Weighted Model Counting with Algebraic Decision Diagrams}{}{}{}{%
 %     \begin{itemize}
 %         \item Employed dynamic programming to develop the exact model counting framework \addmc{} \\
 %             with \jd{} and \mv.
@@ -105,7 +107,7 @@ Except for \cite{rushton_phan_2018_discrete}, \vp{} is the corresponding author.
 %     \end{itemize}
 %     Supervisor: \mvlong.
 % }
-% \cventry{2016--2018}{Syntactic Conditions for Antichain Property in \cp}{}{}{}{
+% \cventry{2016--2018}{Syntactic Conditions for Antichain Property in \cp}{}{}{}{%
 %     \begin{itemize}
 %         \item Found syntactic conditions guaranteeing when \cplong{} programs \\
 %             have antichain property (no answer set is a proper subset of another).
@@ -116,7 +118,7 @@ Except for \cite{rushton_phan_2018_discrete}, \vp{} is the corresponding author.
 % }
 %
 % \subsection{Unpublished}
-% \cventry{2013--2017}{Biquasiarithmetic Mean Comparability}{}{}{}{
+% \cventry{2013--2017}{Biquasiarithmetic Mean Comparability}{}{}{}{%
 %     \begin{itemize}
 %         \item Generalized a theorem on inequalities involving quasiarithmetic means.
 %         \item Resubmitted my paper to the \rh{} in 2017 \\
@@ -127,13 +129,13 @@ Except for \cite{rushton_phan_2018_discrete}, \vp{} is the corresponding author.
 % }
 %
 % \subsection{Projects}
-% \cventry{2017}{Inverse Game of Life}{\ct}{}{}{
+% \cventry{2017}{Inverse Game of Life}{\ct}{}{}{%
 %     \begin{itemize}
 %         \item Investigated the time complexity to invert Conway's Game of Life.
 %     \end{itemize}
 %     Supervisor: \cmlong.
 % }
-% \cventry{2015}{The Non-Commutative A-Ideal of the Three-Twist Knot}{\gt}{}{}{
+% \cventry{2015}{The Non-Commutative A-Ideal of the Three-Twist Knot}{\gt}{}{}{%
 %     \begin{itemize}
 %         \item Did skein computations in the complement of the knot.
 %     \end{itemize}
@@ -143,38 +145,42 @@ Except for \cite{rushton_phan_2018_discrete}, \vp{} is the corresponding author.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
+% \newpage
+% \pagebreak
+
 \section{Software Development}
-\cventry{2019--2020}{\tool{DPMC}}{Dynamic-Programming Model Counter}{\url{github.com/vardigroup/DPMC}}{}{
+\cventry{2019--2020}{\tool{DPMC}}{Dynamic Programming for Model Counting}{\url{github.com/vardigroup/DPMC}}{}{%
     \begin{itemize}
-        \item Implemented the model-counting framework in \cite{dudek_phan_vardi_2020_dpmc} with \jd.
+        \item Implemented a competitive exact weighted \#SAT solver in \cite{dudek_phan_vardi_2020_dpmc} with \jd.
     \end{itemize}
-    Supervisor: \mvlong.
+    Supervisor: Moshe Vardi (Rice University).
 }
-\cventry{2018--2020}{\addmc}{Algebraic-Decision-Diagram Model Counter}{\url{github.com/vardigroup/ADDMC}}{}{
+\cventry{2018--2020}{\addmc}{Algebraic Decision Diagrams for Model Counting}{\url{github.com/vardigroup/ADDMC}}{}{%
     \begin{itemize}
-        \item Implemented the model counter in \cite{dudek_phan_vardi_2020_addmc,phan_2019_weighted}.
+        \item Implemented a competitive exact weighted \#SAT solver in \cite{dudek_phan_vardi_2020_addmc,phan_2019_weighted}.
     \end{itemize}
-    Supervisor: \mvlong.
+    Supervisor: Moshe Vardi (Rice University).
 }
-\cventry{2016--2017}{\led}{Literate Programming System}{\url{vuphan314.github.io/LED}}{}{
+\cventry{2016--2017}{\led}{Literate Programming}{\url{vuphan314.github.io/LED}}{}{%
     \begin{itemize}
-        \item Implemented the \ledlong{} in \cite{rushton_phan_2018_discrete} \\ by automating its translation into the functional programming language \sllang.
-        \item Implemented an \led-to-\tex{} translator.
+        \item Translated the programming language \led{}
+        % in \cite{rushton_phan_2018_discrete}
+        into \sllang{} and \tex{}.
     \end{itemize}
-    Supervisor: \nrlong.
+    Supervisor: Nelson Rushton (Texas Tech University).
 }
-% \cventry{2016}{\kn}{Computer Algebra System}{}{}{
+% \cventry{2016}{\kn}{Computer Algebra System}{}{}{%
 %     \begin{itemize}
-%         \item Designed the procedural programming language \kn{} for knot theory.
+%         \item Designed the procedural language \kn{} for knot theory.
 %         \item Implemented \kn{} by automating its symbolic computation and \tex{} printing.
 %     \end{itemize}
 %     Supervisor: \rglong.
 % }
-\cventry{2015--2016}{\llang}{\lp{} Engine}{\url{github.com/iensen/LtoASPtranslator}}{}{
+\cventry{2015--2016}{\llang}{\lp{}}{\url{github.com/iensen/LtoASPtranslator}}{}{%
     \begin{itemize}
-        \item Implemented the language \llang{} by automating its translation into \aplong.
+        \item Translated the progrmaming language \llang{} into \aplong{} with Evgenii Balai.
     \end{itemize}
-    Supervisor: \nrlong.
+    Supervisor: Nelson Rushton (Texas Tech University).
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -186,7 +192,7 @@ Except for \cite{rushton_phan_2018_discrete}, \vp{} is the corresponding author.
 \cventry{Functional}{\scala, \scheme}{}{}{}{}
 \cventry{Logic}{\sparc, \clingo, \dlv}{}{}{}{}
 \cventry{Data}{\sql}{}{}{}{}
-\cventry{Formatting}{\tex, \html}{}{}{}{}
+% \cventry{Formatting}{\tex, \html}{}{}{}{}
 
 \subsection{Tools}
 \cventry{Linux}{\tool{Bash}, \tool{Git}}{}{}{}{}
@@ -200,19 +206,19 @@ Except for \cite{rushton_phan_2018_discrete}, \vp{} is the corresponding author.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \section{\maths{} Contests}
-% \cventry{2016}{\putnam}{\maa}{}{}{
+% \cventry{2016}{\putnam}{\maa}{}{}{%
 %     \begin{itemize}
 %         \item Participated (rank 733/4164, score 20/120).
 %         % \item Submitted solutions for problems A1/B3 (complete) and A2/B5 (partial).
 %     \end{itemize}
 % }
-% \cventry{2013--2014}{\sml}{\amatyc}{}{}{
+% \cventry{2013--2014}{\sml}{\amatyc}{}{}{%
 %     \begin{itemize}
 %     \item Won Southwest Region (AZ, NM, OK, TX) \\
 %         in 2012-2013 (round 2) and 2013-2014 (round 2 \& aggregate).
 %     \end{itemize}
 % }
-% \cventry{2013}{\maths{} Competition}{\cc}{}{}{
+% \cventry{2013}{\maths{} Competition}{\cc}{}{}{%
 %     \begin{itemize}
 %         \item Won Precalculus Section.
 %     \end{itemize}
@@ -251,7 +257,7 @@ Except for \cite{rushton_phan_2018_discrete}, \vp{} is the corresponding author.
 
 % \section{Standardized Tests}
 % \setlength{\tabcolsep}{4pt}
-% \cventry{2015}{GRE (Graduate Record Examination)}{General Test}{}{}{\texttt{
+% \cventry{2015}{GRE (Graduate Record Examination)}{General Test}{}{}{\texttt{%
 %     \begin{tabular}{l|c|r}
 %         section             & score             & percentile \\ \toprule
 %         Quantitative    & 168~~~/~170 & 95 \\ \hline
@@ -259,7 +265,7 @@ Except for \cite{rushton_phan_2018_discrete}, \vp{} is the corresponding author.
 %         Writing             & ~~3.5~/~~~6 & 42
 %     \end{tabular}
 % }}
-% \cventry{2012}{TOEFL (Test of English as a Foreign Language)}{Internet-Based Test}{}{}{\texttt{
+% \cventry{2012}{TOEFL (Test of English as a Foreign Language)}{Internet-Based Test}{}{}{\texttt{%
 %     \begin{tabular}{l|rrr}
 %         Total         & 104 &/& 120 \\ \midrule
 %         Reading     & 29    &/& 30 \\ \hline
