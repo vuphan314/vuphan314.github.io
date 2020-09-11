@@ -10,7 +10,7 @@
 
   author = {{Phan, Vu H. N.}},
   title = {{Syntactic Conditions for Antichain Property in Consistency Restoring Prolog}},
-  booktitle = {{Answer Set Programming and Other Computing Paradigms (ASPOCP)}},
+  booktitle = {{Workshop on Answer Set Programming and Other Computing Paradigms (ASPOCP)}},
   date = {2018},
   url = {arxiv.org/abs/1809.09319},
 

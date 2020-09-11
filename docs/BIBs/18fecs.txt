@@ -10,7 +10,8 @@
 
   author = {{Rushton, Nelson and Phan, Vu H. N.}},
   title = {{A Discrete Math Methodology for Computer Science}},
-  booktitle = {{Frontiers in Education: Computer Science and Computer Engineering (FECS)}},
+  booktitle = {{International Conference on Frontiers in Education: Computer Science and Computer Engineering (FECS)}},
   date = {2018},
   url = {csce.ucmss.com/cr/books/2018/LFS/CSREA2018/FEC4172.pdf},
+
 }
