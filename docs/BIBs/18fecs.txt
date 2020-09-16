@@ -1,17 +1,17 @@
 @inproceedings{rushton_phan_2018_discrete,
 
-  abstract = {{
+  abstract={{
 
     This paper describes a distinctive methodology for teaching an introductory course on discrete mathematics, which has been used by multiple instructors over the past three years in the Texas Tech computer science department. Key elements of the approach are: (1) the use of types (which include both sets and classes), rather than sets, as the domains of functions; (2) the use of a precise formal language for defining types, functions, and relations; and (3) the use of purely functional game programming as a testbed for students' mathematical modeling skills. Results of student evaluations are reported, comparing students' reviews of this approach with a more orthodox approach over six sections of our course and five of the standard course.
 
   }},
 
-  keywords = {conference},
+  keywords={conference},
 
-  author = {{Rushton, Nelson and Phan, Vu H. N.}},
-  title = {{A Discrete Math Methodology for Computer Science}},
-  booktitle = {{International Conference on Frontiers in Education: Computer Science and Computer Engineering (FECS)}},
-  date = {2018},
-  url = {csce.ucmss.com/cr/books/2018/LFS/CSREA2018/FEC4172.pdf},
+  author={Rushton, Nelson and Phan, Vu H. N.},
+  title={{A Discrete Math Methodology for Computer Science}},
+  booktitle={{International Conference on Frontiers in Education: Computer Science and Computer Engineering (FECS)}},
+  date={2018},
+  url={csce.ucmss.com/cr/books/2018/LFS/CSREA2018/FEC4172.pdf},
 
 }
