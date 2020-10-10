@@ -1,30 +1,28 @@
-\documentclass[12pt, letterpaper, sans]{moderncv} % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[12pt, letterpaper, sans]{moderncv}
+%% font size ('10pt', '11pt', or '12pt')
+%% paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper', or 'landscape')
+%% font family ('sans' or 'roman')
 
-\moderncvstyle{classic} % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvstyle{classic} % 'casual' (default), 'classic', 'banking', 'oldstyle', or 'fancy'
 
-\moderncvcolor{purple} % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\moderncvcolor{blue} % 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple', or 'red'
 
 \usepackage[scale=.9]{geometry}
 
-\setlength{\hintscolumnwidth}{80pt} % if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{50pt} % if you want to change the width of the column with the dates
 
 \usepackage{STYs/common}%.sty
 \usepackage{STYs/docs}%.sty
 \usepackage{STYs/ADDMC}%.sty
 
-\newcommand{\citationstyle}{alphabetic}
-% \renewcommand{\citationstyle}{numeric}
-\usepackage[sorting=none, citestyle=\citationstyle, bibstyle=\citationstyle]{biblatex}
+\newcommand{\refstyle}{alphabetic}
+% \renewcommand{\refstyle}{reading}
+\usepackage[sorting=none, citestyle=\refstyle, bibstyle=\refstyle]{biblatex}
 \addbibresource{BIBs/18aspocp.txt}
 \addbibresource{BIBs/18fecs.txt}
 \addbibresource{BIBs/19ms.txt}
 \addbibresource{BIBs/20aaai.txt}
 \addbibresource{BIBs/20cp.txt}
-\nocite{phan_2019_weighted}
-\nocite{dudek_phan_vardi_2020_dpmc}
-\nocite{dudek_phan_vardi_2020_addmc}
-% \nocite{rushton_phan_2018_discrete}
-\nocite{phan_2018_syntactic}
 
 \rfoot{Page \thepage{} of \pageref{LastPage}}
 
@@ -32,7 +30,7 @@
 
 % \renewcommand{\familydefault}{\sfdefault} % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 
-\name{Vu Hoang Nguyen}{Phan, M.S.}
+\name{Vu Hoang Nguyen}{Phan}
 \title{Curriculum Vitae}
 
 %% pdf will be in following order, which can't be changed
@@ -40,7 +38,7 @@
 % \phone[mobile]{}
 % \email{}
 % \homepage{}
-\social[github]{vuphan314}
+\social[github]{VuPhan314}
 % \social[linkedin]{vuphan314}
 
 \photo[100pt][.1pt]{../images/headshot19.jpg}
@@ -50,44 +48,32 @@
 
 \begin{document}
 
-\textbf{Latest version}: \vpHomepage \\ This version: 2020/09/04
+Latest version: \vpHomepage \\ This version: 2020/10/09
 
 \makecvtitle
+
+Vu Phan is a Computer Science Ph.D. student of Prof. Moshe Vardi at Rice University in Texas.
+He applies knowledge compilation and dynamic programming to counting problems.
+He expects to graduate in 2022 Spring.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Education}
-\cventry{2017/08--present}{Doctor of Philosophy}{\cs}{\rice}{Houston TX}{%
-    \begin{itemize}
-        \item \advisor{Prof. \mv}
-        \item Research interests: weighted model counting and related problems in probabilistic reasoning
-    \end{itemize}
-}
-\cventry{2017/08--2019/12}{Master of Science}{\cs}{\rice}{Houston TX}{%
-    % \begin{itemize}
-    %     \item \advisor{\mv}
-    %     \item Research: \cl
-    % \end{itemize}
-}
-\cventry{2014/08--2017/08}{Dual Bachelor of Science}{\cs{} \& \maths}{\ttu}{Lubbock TX}{%
-    % \begin{itemize}
-    %     \item \advisor{\mg}
-    %     \item Research: \lp
-    % \end{itemize}
-}
-% \cventry{2013/01--2014/08}{Associate of Science}{}{\cc}{Plano TX}{%
-%     \begin{itemize}
-%         \item \advisor{\ag}
-%         \item Research: \ma
-%     \end{itemize}
-% }
+\cventry{2017--2022}{Doctor of Philosophy}{\cs}{\rice}{GPA 3.57}{}
+\cventry{2017--2019}{Master of Science}{\cs}{\rice}{GPA 3.60}{}
+\cventry{2014--2017}{Dual Bachelor of Science}{\cs{} \& \maths}{\ttu}{GPA 4.00}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \printbibheading[title={Bibliography}]
 \vp{} is the corresponding author of the following publications%
-% , except for \cite{rushton_phan_2018_discrete}
+% , except for \cite{RushtonPhan2018discrete}
 .
+\nocite{Phan2019weighted}
+\nocite{DudekPhanVardi2020dpmc}
+\nocite{DudekPhanVardi2020addmc}
+% \nocite{RushtonPhan2018discrete}
+\nocite{Phan2018syntactic}
 
 \printbibliography[type=thesis, heading=subbibliography, title={Thesis}]
 \printbibliography[keyword=conference, heading=subbibliography, title={Conference Papers}]
@@ -96,27 +82,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \section{Research}
-%
-% \subsection{Published}
-% \cventry{2018--2020}{ADDMC: Weighted Model Counting with Algebraic Decision Diagrams}{}{}{}{%
-%     \begin{itemize}
-%         \item Employed dynamic programming to develop the exact model counting framework \addmc{} \\
-%             with \jd{} and \mv.
-%         \item Presented our paper at the AAAI conference in New York City on 2020/02/11.
-%     \end{itemize}
-%     Supervisor: \mvlong.
-% }
-% \cventry{2016--2018}{Syntactic Conditions for Antichain Property in \cp}{}{}{}{%
-%     \begin{itemize}
-%         \item Found syntactic conditions guaranteeing when \cplong{} programs \\
-%             have antichain property (no answer set is a proper subset of another).
-%         \item Presented my paper at the ASPOCP workshop (affiliated with ICLP, part of FLoC) \\
-%             in Oxford on 2018/07/18.
-%     \end{itemize}
-%     Supervisor: \mglong.
-% }
-%
-% \subsection{Unpublished}
 % \cventry{2013--2017}{Biquasiarithmetic Mean Comparability}{}{}{}{%
 %     \begin{itemize}
 %         \item Generalized a theorem on inequalities involving quasiarithmetic means.
@@ -126,8 +91,6 @@
 %     \end{itemize}
 %     Supervisor: \aglong.
 % }
-%
-% \subsection{Projects}
 % \cventry{2017}{Inverse Game of Life}{\ct}{}{}{%
 %     \begin{itemize}
 %         \item Investigated the time complexity to invert Conway's Game of Life.
@@ -147,23 +110,25 @@
 % \newpage
 % \pagebreak
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Software Development}
 \cventry{2019--2020}{\tool{DPMC}}{Dynamic Programming for Model Counting}{\url{github.com/vardigroup/DPMC}}{}{%
     \begin{itemize}
-        \item Implemented a competitive exact weighted \#SAT solver in \cite{dudek_phan_vardi_2020_dpmc} with \jd.
+        \item Implemented a competitive weighted \#SAT solver with \jd{} \cite{DudekPhanVardi2020dpmc}.
     \end{itemize}
     Supervisor: Moshe Vardi (Rice University).
 }
 \cventry{2018--2020}{\addmc}{Algebraic Decision Diagrams for Model Counting}{\url{github.com/vardigroup/ADDMC}}{}{%
     \begin{itemize}
-        \item Implemented a competitive exact weighted \#SAT solver in \cite{dudek_phan_vardi_2020_addmc,phan_2019_weighted}.
+        \item Implemented an exact weighted \#SAT solver for conjunctive normal form \cite{DudekPhanVardi2020addmc,Phan2019weighted}.
     \end{itemize}
     Supervisor: Moshe Vardi (Rice University).
 }
 \cventry{2016--2017}{\led}{Literate Programming}{\url{vuphan314.github.io/LED}}{}{%
     \begin{itemize}
         \item Translated the programming language \led{}
-        % in \cite{rushton_phan_2018_discrete}
+        % in \cite{RushtonPhan2018discrete}
         into \sllang{} and \tex{}.
     \end{itemize}
     Supervisor: Nelson Rushton (Texas Tech University).
@@ -184,23 +149,23 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Computer Skills}
-
-\subsection{Programming Languages}
-\cventry{Procedural}{\python, \cpp, \java}{}{}{}{}
-\cventry{Functional}{\scala, \scheme}{}{}{}{}
-\cventry{Logic}{\sparc, \clingo, \dlv}{}{}{}{}
-\cventry{Data}{\sql}{}{}{}{}
-% \cventry{Formatting}{\tex, \html}{}{}{}{}
-
-\subsection{Tools}
-\cventry{Linux}{\tool{Bash}, \tool{Git}}{}{}{}{}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % \section{Tutoring}
 % \cventry{2015, 2017}{\cs, \maths, Physics, Chemistry}{}{}{}{Supervisor: \pblong}
 % \cventry{2014}{\maths, Physics, Chemistry}{}{}{}{Supervisor: \dkeetonlong}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Programming Languages}
+\cventry{Procedural}{\python, \cpp, \java}{}{}{}{}
+\cventry{Functional}{\scala, \scheme}{}{}{}{}
+% \cventry{Logic}{\sparc, \clingo, \dlv}{}{}{}{}
+% \cventry{Data}{\sql}{}{}{}{}
+% \cventry{Formatting}{\tex, \html}{}{}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Tools}
+% \cventry{Linux}{\tool{Bash}, \tool{Git}}{}{}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -226,31 +191,77 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Graduate Courses}
-\cventry{2020 Fall}{Bioinformatics: Sequence Analysis}{}{}{}{}
-\cventry{2020 Spring}{Statistical Machine Learning}{}{}{}{}
-\cventry{2019 Fall}{Computer Systems Architecture}{}{}{}{}
-\cventry{2019 Spring}{Compiler Construction, Multi-Core Computing}{}{}{}{}
-\cventry{2018 Fall}{Artificial Intelligence}{}{}{}{}
-\cventry{2018 Spring}{Automated Program Verification, Principles of Programming Languages}{}{}{}{}
-\cventry{2017 Fall}{Advanced Logic in Computer Science}{}{}{}{}
-% \cventry{2017\\Spring}{Abstract Algebra 2}{}{}{}{Instructor: \dmlong}
-% \cventry{2016\\Fall}{Databases}{}{}{}{Instructor: \nrlong}
-% \cventry{2016\\Spring}{Algorithms}{}{}{}{Instructor: \mglong}
-% \cventry{2015\\Fall}{\ma{} 2}{}{}{}{Instructor: \rglong}
-% \cventry{2015\\Spring}{Automata}{}{}{}{Instructor: \mglong}
-% \cventry{2015\\Spring}{Programming 1}{}{}{}{Instructor: \nrlong}
-% \cventry{2014\\Fall}{Proofs}{}{}{}{Instructor: \cmlong}
+\cventry{2020}{Fall semester}{}{}{}{
+    \begin{itemize}
+        \item Bioinformatics: Sequence Analysis
+    \end{itemize}
+}
+\cventry{2020}{Spring semester}{}{}{}{
+    \begin{itemize}
+        \item Automated Program Verification (topic: reinforcement learning)
+        \item Statistical Machine Learning
+    \end{itemize}
+}
+\cventry{2019}{Fall semester}{}{}{}{
+    \begin{itemize}
+        \item Computer Systems Architecture
+    \end{itemize}
+}
+\cventry{2019}{Spring semester}{}{}{}{
+    \begin{itemize}
+        \item Automated Program Verification (topic: autonomous driving)
+        \item Compiler Construction
+        \item Multi-Core Computing
+    \end{itemize}
+}
+\cventry{2018}{Fall semester}{}{}{}{
+    \begin{itemize}
+        \item Artificial Intelligence
+    \end{itemize}
+}
+\cventry{2018}{Spring semester}{}{}{}{
+    \begin{itemize}
+        \item Automated Program Verification (topic: program repair)
+        \item Principles of Programming Languages
+    \end{itemize}
+}
+\cventry{2017}{Fall semester}{}{}{}{
+    \begin{itemize}
+        \item Advanced Logic in Computer Science
+    \end{itemize}
+}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Graduate Courses}
+% \cventry{2020 Fa}{Bioinformatics: Sequence Analysis}{}{}{}{}
+% \cventry{2020 Sp}{Automated Program Verification, Statistical Machine Learning}{}{}{}{}
+% \cventry{2019 Fa}{Computer Systems Architecture}{}{}{}{}
+% \cventry{2019 Sp}{Compiler Construction, Multi-Core Computing}{}{}{}{}
+% \cventry{2018 Fa}{Artificial Intelligence}{}{}{}{}
+% \cventry{2018 Sp}{Principles of Programming Languages}{}{}{}{}
+% \cventry{2017 Fa}{Advanced Logic in Computer Science}{}{}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\sch s}
-\cventry{2017--present}{\phd{} Student Tuition \& Stipend}{\cs{} Department}{\rice}{}{}
-\cventry{2016--2017}{General \sch}{\fao}{\ttu}{}{}
-\cventry{2015--2017}{Academic Achievement \sch}{\cas}{\ttu}{}{}
-\cventry{2015--2017}{\und{} Achievement \sch}{\mathsd}{\ttu}{}{}
-\cventry{2015--2016}{\und{} Research \sch}{\mathsd}{\ttu}{}{}
-\cventry{2014--2016}{Proven Achiever \sch}{\fao}{\ttu}{}{}
-% \cventry{2013--2014}{Excellence \sch}{\mathsd}{\cc}{}{}
+% \section{Undergraduate Courses}
+% \cventry{2017\\Sp}{Abstract Algebra 2}{}{}{}{Instructor: \dmlong}
+% \cventry{2016\\Fa}{Databases}{}{}{}{Instructor: \nrlong}
+% \cventry{2016\\Sp}{Algorithms}{}{}{}{Instructor: \mglong}
+% \cventry{2015\\Fa}{\ma{} 2}{}{}{}{Instructor: \rglong}
+% \cventry{2015\\Sp}{Automata}{}{}{}{Instructor: \mglong}
+% \cventry{2015\\Sp}{Programming 1}{}{}{}{Instructor: \nrlong}
+% \cventry{2014\\Fa}{Proofs}{}{}{}{Instructor: \cmlong}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Scholarships}
+\cventry{2017--2022}{Ph.D. Student Tuition \& Stipend}{\cs{} Department}{\rice}{}{}
+% \cventry{2016--2017}{General Scholarship}{\fao}{\ttu}{}{}
+\cventry{2015--2017}{Academic Achievement Scholarship}{\cas}{\ttu}{}{}
+% \cventry{2015--2017}{Undergraduate Achievement Scholarship}{\mathsd}{\ttu}{}{}
+% \cventry{2015--2016}{Undergraduate Research Scholarship}{\mathsd}{\ttu}{}{}
+\cventry{2014--2016}{Proven Achiever Scholarship}{\fao}{\ttu}{}{}
+% \cventry{2013--2014}{Excellence Scholarship}{\mathsd}{\cc}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
