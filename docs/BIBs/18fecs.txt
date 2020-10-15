@@ -1,5 +1,4 @@
-@inproceedings{
-  RushtonPhan2018discrete,
+@inproceedings{RushtonPhan2018discrete,
   abstract={
     This paper describes a distinctive methodology for teaching an introductory course on discrete mathematics, which has been used by multiple instructors over the past three years in the Texas Tech computer science department. Key elements of the approach are: (1) the use of types (which include both sets and classes), rather than sets, as the domains of functions; (2) the use of a precise formal language for defining types, functions, and relations; and (3) the use of purely functional game programming as a testbed for students' mathematical modeling skills. Results of student evaluations are reported, comparing students' reviews of this approach with a more orthodox approach over six sections of our course and five of the standard course.
   },
