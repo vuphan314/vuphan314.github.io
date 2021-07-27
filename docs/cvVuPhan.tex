@@ -23,9 +23,11 @@
 \addbibresource{BIBs/19ms.txt}
 \addbibresource{BIBs/20aaai.txt}
 \addbibresource{BIBs/20cp.txt}
+\addbibresource{BIBs/21sat.txt}
 
 %% cv order:
 \nocite{Phan2019weighted}
+\nocite{DudekPhanVardi2021procount}
 \nocite{DudekPhanVardi2020dpmc}
 \nocite{DudekPhanVardi2020addmc}
 % \nocite{RushtonPhan2018discrete}
@@ -46,7 +48,7 @@
 % \email{}
 % \homepage{}
 \social[github]{vuphan314}
-% \social[linkedin]{vuphan314}
+\social[linkedin]{vuphan314}
 
 \photo[100pt][.1pt]{../images/headshot19.jpg}
 %% '64pt' is the height the picture must be resized to, .4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
@@ -55,7 +57,7 @@
 
 \begin{document}
 
-Latest version: \vpHomepage \\ This version: 2021/06/24
+Latest version: \vpHomepage \\ This version: 2021/07/27
 
 \makecvtitle
 
@@ -73,8 +75,9 @@ He solves computational counting problems with dynamic programming and knowledge
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Service}
-\cventry{2020--2021}{Peer Reviewer}{International Conference on Artificial Intelligence and Statistics (AISTATS)}{}{}{}
+\section{Experience}
+\cventry{2021}{Summer Intern}{Intel Corporation}{Formal Verification}{}{}
+% \cventry{2020--2021}{Peer Reviewer}{International Conference on Artificial Intelligence and Statistics (AISTATS)}{}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -109,22 +112,28 @@ He solves computational counting problems with dynamic programming and knowledge
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Software Projects}
+\cventry{2020--2021}{ProCount}{Projected Counting}{\url{github.com/vardigroup/DPMC}}{}{
+    \begin{itemize}
+        \item Implemented a weighted projected \#SAT framework \cite{DudekPhanVardi2021procount} with \jd{}.
+    \end{itemize}
+    Supervisor: Moshe Vardi (Rice University).
+}
 \cventry{2019--2020}{DPMC}{Dynamic Programming for Model Counting}{\url{github.com/vardigroup/DPMC}}{}{
     \begin{itemize}
-        \item Implemented a competitive weighted \#SAT framework in \cite{DudekPhanVardi2020dpmc} with \jd{}.
+        \item Implemented a weighted \#SAT framework \cite{DudekPhanVardi2020dpmc} with \jd{}.
     \end{itemize}
     Supervisor: Moshe Vardi (Rice University).
 }
 \cventry{2019--2020}{ADDMC}{Algebraic Decision Diagrams for Model Counting}{\url{github.com/vardigroup/ADDMC}}{}{
     \begin{itemize}
-        \item Implemented a competitive weighted \#SAT solver in \cite{DudekPhanVardi2020addmc,Phan2019weighted}.
+        \item Implemented a weighted \#SAT solver \cite{DudekPhanVardi2020addmc,Phan2019weighted}.
     \end{itemize}
     Supervisor: Moshe Vardi (Rice University).
 }
 \cventry{2016--2018}{LED}{Language of Effective Definitions}{\url{vuphan314.github.io/LED}}{}{
     \begin{itemize}
         \item Translated the literate programming language \led{}
-            % in \cite{RushtonPhan2018discrete}
+            % \cite{RushtonPhan2018discrete}
             into \sllang{} and \tex{}.
     \end{itemize}
     Supervisor: Nelson Rushton (Texas Tech University).
@@ -145,8 +154,10 @@ He solves computational counting problems with dynamic programming and knowledge
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Programming Languages}
-\cventry{Procedural}{Python, C++, Java}{}{}{}{}
-\cventry{Functional}{Scala, Scheme}{}{}{}{}
+\cventry{Software}{C++, Python}{}{}{}{}
+\cventry{Hardware}{SystemVerilog}{}{}{}{}
+% \cventry{Procedural}{Python, C++, Java}{}{}{}{}
+% \cventry{Functional}{Scala, Scheme}{}{}{}{}
 % \cventry{Logic}{\sparc, \clingo, \dlv}{}{}{}{}
 % \cventry{Data}{\sql}{}{}{}{}
 % \cventry{Formatting}{\tex, \html}{}{}{}{}
@@ -180,7 +191,7 @@ He solves computational counting problems with dynamic programming and knowledge
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Graduate Courses}
-\cventry{2021}{Spring}{}{Reasoning about Software}{}{}
+\cventry{2021}{Spring}{}{Reasoning about Software (A+)}{}{}
 \cventry{2020}{Fall}{}{Bioinformatics: Sequence Analysis (A-)}{}{}
 \cventry{2020}{Spring}{}{%
     % Automated Program Verification (Reinforcement Learning),
