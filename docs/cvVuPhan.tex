@@ -17,6 +17,7 @@
 
 \newcommand{\refstyle}{alphabetic}
 % \renewcommand{\refstyle}{reading}
+
 \usepackage[sorting=none, citestyle=\refstyle, bibstyle=\refstyle]{biblatex}
 \addbibresource{BIBs/18aspocp.txt}
 \addbibresource{BIBs/18fecs.txt}
@@ -25,7 +26,7 @@
 \addbibresource{BIBs/20cp.txt}
 \addbibresource{BIBs/21sat.txt}
 
-%% cv order:
+%% CV order:
 \nocite{Phan2019weighted}
 \nocite{DudekPhanVardi2021procount}
 \nocite{DudekPhanVardi2020dpmc}
@@ -42,7 +43,7 @@
 \name{Vu Hoang Nguyen}{Phan}
 \title{Curriculum Vitae}
 
-%% pdf will be in following order, which can't be changed
+%% PDF will be in following order, which cannot be changed
 % \address{}
 % \phone[mobile]{}
 % \email{}
@@ -57,27 +58,87 @@
 
 \begin{document}
 
-Latest version: \vpHomepage \\ This version: 2021/07/27
+Latest version: \vpHomepage \\
+This version: 2021/08/10
 
 \makecvtitle
 
-Vu Phan is a Computer Science Ph.D. student of Prof. Moshe Vardi at Rice University, expecting to graduate in 2022 Spring.
+Vu Phan is a Computer Science Ph.D. student of Prof. Moshe Vardi at Rice University, expecting to graduate by 2022 August.
 He solves computational counting problems with dynamic programming and knowledge compilation.
-\\
 (Vu Phan is a citizen of Vietnam. He was issued an F1 visa and is currently staying in Texas.)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Education}
-\cventry{2017--2022}{Doctor of Philosophy}{\cs}{\rice}{GPA 3.61}{}
-\cventry{2017--2019}{Master of Science}{\cs}{\rice}{GPA 3.60}{}
-\cventry{2014--2017}{Dual Bachelor of Science}{\cs{} and \maths}{\ttu}{GPA 4.00}{}
+\cventry{2017--2022}{Doctor of Philosophy}{\cs}{\rice}{Houston TX}{}
+\cventry{2017--2019}{Master of Science}{\cs}{\rice}{Houston TX}{}
+\cventry{2014--2017}{Bachelor of Science}{\cs{} and \maths}{\ttu}{Lubbock TX}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\cventry{2021}{Summer Intern}{Intel Corporation}{Formal Verification}{}{}
+\cventry{2021 Summer}{Graduate Technical Intern}{Intel Corporation}{Formal Verification}{}{
+    \begin{itemize}
+        \item Wrote context-free grammar to convert SystemVerilog scoreboards from one formal tool to another.
+        \item Developed scripts to run experiments comparing two formal tools and report results.
+    \end{itemize}
+}
 % \cventry{2020--2021}{Peer Reviewer}{International Conference on Artificial Intelligence and Statistics (AISTATS)}{}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certification}
+\cventry{2021}{SVA, Formal, and JasperGold Fundamentals for Designers v19.03}{Cadence Design Systems}{}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Programming Languages}
+\cventry{Hardware}{SystemVerilog}{}{}{}{}
+\cventry{Software}{Python, C++; Dafny, Coq}{}{}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Released Projects}
+\cventry{2020--2021}{ProCount}{Projected Counter}{\url{https://github.com/vardigroup/DPMC}}{}{
+    \begin{itemize}
+        \item Implemented a weighted projected \#SAT framework with \jd{}.
+    \end{itemize}
+    % Supervisor: Moshe Vardi (Rice University).
+}
+\cventry{2019--2020}{DPMC}{Dynamic-Programming Model Counter}{\url{https://github.com/vardigroup/DPMC}}{}{
+    \begin{itemize}
+        \item Implemented a weighted \#SAT framework with \jd{}.
+    \end{itemize}
+    % Supervisor: Moshe Vardi (Rice University).
+}
+\cventry{2019--2020}{ADDMC}{Algebraic-Decision-Diagram Model Counter}{\url{https://github.com/vardigroup/ADDMC}}{}{
+    \begin{itemize}
+        \item Implemented a weighted \#SAT solver.
+    \end{itemize}
+    % Supervisor: Moshe Vardi (Rice University).
+}
+\cventry{2016--2018}{LED}{Language of Effective Definitions}{\url{https://vuphan314.github.io/LED}}{}{
+    \begin{itemize}
+        \item Translated the literate programming language \led{}
+            % \cite{RushtonPhan2018discrete}
+            into \sllang{} and \tex{}.
+    \end{itemize}
+    % Supervisor: Nelson Rushton (Texas Tech University).
+}
+\cventry{2015--2016}{L}{Logic}{\url{https://github.com/iensen/LtoASPtranslator}}{}{
+    \begin{itemize}
+        \item Translated the logic programming language \llang{} into \aplong{} with Evgenii Balai.
+    \end{itemize}
+    % Supervisor: Nelson Rushton (Texas Tech University).
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Graduate Courses}
+\cventry{2020--2021}{Bioinformatics: Sequence Analysis; Reasoning about Software}{}{}{}{}
+\cventry{2019--2020}{Computer Systems Architecture; Statistical Machine Learning}{}{}{}{}
+\cventry{2018--2019}{Artificial Intelligence; Compiler Construction, Multi-Core Computing}{}{}{}{}
+\cventry{2017--2018}{Logic in Computer Science; Programming Languages}{}{}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -89,83 +150,6 @@ He solves computational counting problems with dynamic programming and knowledge
 \printbibliography[type=thesis, heading=subbibliography, title={Thesis}]
 \printbibliography[keyword=conference, heading=subbibliography, title={Conference Papers}]
 \printbibliography[keyword=workshop, heading=subbibliography, title={Workshop Paper}]
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \section{Research}
-% \cventry{2013--2017}{Biquasiarithmetic Mean Comparability}{}{}{}{
-%     \begin{itemize}
-%         \item Generalized a theorem on inequalities involving quasiarithmetic means.
-%         \item Resubmitted my paper to the \rh{} in 2017 \\
-%             (previously submitted in 2013 and 2014).
-%         \item Presented my paper at the \tumc{} in San Antonio on 2013/10/26.
-%     \end{itemize}
-%     Supervisor: \aglong.
-% }
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\clearpage
-% \newpage
-% \pagebreak
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Software Projects}
-\cventry{2020--2021}{ProCount}{Projected Counting}{\url{github.com/vardigroup/DPMC}}{}{
-    \begin{itemize}
-        \item Implemented a weighted projected \#SAT framework \cite{DudekPhanVardi2021procount} with \jd{}.
-    \end{itemize}
-    Supervisor: Moshe Vardi (Rice University).
-}
-\cventry{2019--2020}{DPMC}{Dynamic Programming for Model Counting}{\url{github.com/vardigroup/DPMC}}{}{
-    \begin{itemize}
-        \item Implemented a weighted \#SAT framework \cite{DudekPhanVardi2020dpmc} with \jd{}.
-    \end{itemize}
-    Supervisor: Moshe Vardi (Rice University).
-}
-\cventry{2019--2020}{ADDMC}{Algebraic Decision Diagrams for Model Counting}{\url{github.com/vardigroup/ADDMC}}{}{
-    \begin{itemize}
-        \item Implemented a weighted \#SAT solver \cite{DudekPhanVardi2020addmc,Phan2019weighted}.
-    \end{itemize}
-    Supervisor: Moshe Vardi (Rice University).
-}
-\cventry{2016--2018}{LED}{Language of Effective Definitions}{\url{vuphan314.github.io/LED}}{}{
-    \begin{itemize}
-        \item Translated the literate programming language \led{}
-            % \cite{RushtonPhan2018discrete}
-            into \sllang{} and \tex{}.
-    \end{itemize}
-    Supervisor: Nelson Rushton (Texas Tech University).
-}
-\cventry{2015--2016}{L}{Logic}{\url{github.com/iensen/LtoASPtranslator}}{}{
-    \begin{itemize}
-        \item Translated the logic programming language \llang{} into \aplong{} with Evgenii Balai.
-    \end{itemize}
-    Supervisor: Nelson Rushton (Texas Tech University).
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \section{Tutoring}
-% \cventry{2015, 2017}{\cs, \maths, Physics, Chemistry}{}{}{}{Supervisor: \pblong}
-% \cventry{2014}{\maths, Physics, Chemistry}{}{}{}{Supervisor: \dkeetonlong}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Programming Languages}
-\cventry{Software}{C++, Python}{}{}{}{}
-\cventry{Hardware}{SystemVerilog}{}{}{}{}
-% \cventry{Procedural}{Python, C++, Java}{}{}{}{}
-% \cventry{Functional}{Scala, Scheme}{}{}{}{}
-% \cventry{Logic}{\sparc, \clingo, \dlv}{}{}{}{}
-% \cventry{Data}{\sql}{}{}{}{}
-% \cventry{Formatting}{\tex, \html}{}{}{}{}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \section{Tools}
-% \cventry{Linux}{\tool{Bash}, \tool{Git}}{}{}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -182,52 +166,24 @@ He solves computational counting problems with dynamic programming and knowledge
 %         in 2012-2013 (round 2) and 2013-2014 (round 2 and aggregate).
 %     \end{itemize}
 % }
-% \cventry{2013}{\maths{} Competition}{\cc}{}{}{
-%     \begin{itemize}
-%         \item Won Precalculus Section.
-%     \end{itemize}
-% }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Graduate Courses}
-\cventry{2021}{Spring}{}{Reasoning about Software (A+)}{}{}
-\cventry{2020}{Fall}{}{Bioinformatics: Sequence Analysis (A-)}{}{}
-\cventry{2020}{Spring}{}{%
-    % Automated Program Verification (Reinforcement Learning),
-    Statistical Machine Learning (B+)%
-}{}{}
-\cventry{2019}{Fall}{}{Computer Systems Architecture (A+)}{}{}
-\cventry{2019}{Spring}{}{%
-    % Automated Program Verification (Autonomous Driving),
-    Compiler Construction (A-),
-    Multi-Core Computing (B)%
-}{}{}
-\cventry{2018}{Fall}{}{Artificial Intelligence (A-)}{}{}
-\cventry{2018}{Spring}{}{%
-    % Automated Program Verification (Reactive Synthesis),
-    Programming Languages (B)%
-}{}{}
-\cventry{2017}{Fall}{}{Logic in Computer Science (B+)}{}{}
+% \section{Teaching Assistantships}
+% \cventry{2020 Spring}{Programming Languages}{}{}{}{}
+% \cventry{2019 Fall}{Logic in Computer Science}{}{}{}{}
+% \cventry{2018 Fall}{Reasoning about Algorithms}{}{}{}{}
+% \cventry{2018 Spring}{Object-Oriented Programming and Design}{}{}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Teaching Assistantships}
-\cventry{2020}{Spring}{}{Programming Languages}{}{}
-\cventry{2019}{Fall}{}{Logic in Computer Science}{}{}
-\cventry{2018}{Fall}{}{Reasoning about Algorithms}{}{}
-\cventry{2018}{Spring}{}{Object-Oriented Programming and Design}{}{}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Awards}
-\cventry{2017--2021}{Ph.D. Tuition and Stipend}{}{\rice}{}{}
+% \section{Awards}
+% \cventry{2017--2022}{Ph.D. Student Tuition and Stipend}{}{\rice}{}{}
 % \cventry{2016--2017}{General Scholarship}{}{\ttu}{}{}
-\cventry{2015--2017}{Academic Achievement Scholarship}{}{\ttu}{}{}
+% \cventry{2015--2017}{Academic Achievement Scholarship}{}{\ttu}{}{}
 % \cventry{2015--2017}{Undergraduate Achievement Scholarship}{}{\ttu}{}{}
 % \cventry{2015--2016}{Undergraduate Research Scholarship}{}{\ttu}{}{}
-\cventry{2014--2016}{Proven Achiever Scholarship}{}{\ttu}{}{}
-% \cventry{2013--2014}{Excellence Scholarship}{}{\cc}{}{}
+% \cventry{2014--2016}{Proven Achiever Scholarship}{}{\ttu}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
