@@ -7,13 +7,12 @@
 
 \moderncvcolor{blue} % 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple', or 'red'
 
-\usepackage[scale=.9]{geometry}
+\setlength{\hintscolumnwidth}{51pt} % if you want to change the width of the column with the dates
 
-\setlength{\hintscolumnwidth}{50pt} % if you want to change the width of the column with the dates
+\usepackage[scale=.89]{geometry}
 
-\usepackage{STYs/common}%.sty
-\usepackage{STYs/docs}%.sty
-\usepackage{STYs/ADDMC}%.sty
+\usepackage{lastpage}
+\rfoot{Page \thepage{} of \pageref{LastPage}}
 
 \newcommand{\refstyle}{alphabetic}
 % \renewcommand{\refstyle}{reading}
@@ -33,8 +32,6 @@
 \nocite{DudekPhanVardi2020addmc}
 % \nocite{RushtonPhan2018discrete}
 \nocite{Phan2018syntactic}
-
-\rfoot{Page \thepage{} of \pageref{LastPage}}
 
 \setlength{\parindent}{0pt}
 
@@ -58,7 +55,7 @@
 
 \begin{document}
 
-Latest version: \vpHomepage \\
+Latest version: \url{https://vuphan314.github.io} \\
 This version: 2021/08/10
 
 \makecvtitle
@@ -70,9 +67,9 @@ He solves computational counting problems with dynamic programming and knowledge
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Education}
-\cventry{2017--2022}{Doctor of Philosophy}{\cs}{\rice}{Houston TX}{}
-\cventry{2017--2019}{Master of Science}{\cs}{\rice}{Houston TX}{}
-\cventry{2014--2017}{Bachelor of Science}{\cs{} and \maths}{\ttu}{Lubbock TX}{}
+\cventry{2022/08}{Doctor of Philosophy}{Computer Science}{Rice University}{Houston TX}{}
+\cventry{2019/12}{Master of Science}{Computer Science}{Rice University}{Houston TX}{}
+\cventry{2017/08}{Bachelor of Science}{Computer Science{} and Math}{Texas Tech University}{Lubbock TX}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -83,7 +80,7 @@ He solves computational counting problems with dynamic programming and knowledge
         \item Developed scripts to run experiments comparing two formal tools and report results.
     \end{itemize}
 }
-% \cventry{2020--2021}{Peer Reviewer}{International Conference on Artificial Intelligence and Statistics (AISTATS)}{}{}{}
+% \cventry{2020-2021}{Peer Reviewer}{International Conference on Artificial Intelligence and Statistics (AISTATS)}{}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -98,36 +95,36 @@ He solves computational counting problems with dynamic programming and knowledge
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Released Projects}
-\cventry{2020--2021}{ProCount}{Projected Counter}{\url{https://github.com/vardigroup/DPMC}}{}{
+\section{Public Projects}
+\cventry{2020-2021}{ProCount}{Projected Counter}{\url{https://github.com/vardigroup/DPMC}}{}{
     \begin{itemize}
-        \item Implemented a weighted projected \#SAT framework with \jd{}.
+        \item Implemented a weighted projected \#SAT framework with Jeffrey Dudek.
     \end{itemize}
     % Supervisor: Moshe Vardi (Rice University).
 }
-\cventry{2019--2020}{DPMC}{Dynamic-Programming Model Counter}{\url{https://github.com/vardigroup/DPMC}}{}{
+\cventry{2019-2020}{DPMC}{Dynamic-Programming Model Counter}{\url{https://github.com/vardigroup/DPMC}}{}{
     \begin{itemize}
-        \item Implemented a weighted \#SAT framework with \jd{}.
+        \item Implemented a weighted \#SAT framework with Jeffrey Dudek.
     \end{itemize}
     % Supervisor: Moshe Vardi (Rice University).
 }
-\cventry{2019--2020}{ADDMC}{Algebraic-Decision-Diagram Model Counter}{\url{https://github.com/vardigroup/ADDMC}}{}{
+\cventry{2019-2020}{ADDMC}{Algebraic-Decision-Diagram Model Counter}{\url{https://github.com/vardigroup/ADDMC}}{}{
     \begin{itemize}
         \item Implemented a weighted \#SAT solver.
     \end{itemize}
     % Supervisor: Moshe Vardi (Rice University).
 }
-\cventry{2016--2018}{LED}{Language of Effective Definitions}{\url{https://vuphan314.github.io/LED}}{}{
+\cventry{2016-2018}{LED}{Language of Effective Definitions}{\url{https://vuphan314.github.io/LED}}{}{
     \begin{itemize}
-        \item Translated the literate programming language \led{}
+        \item Translated the literate programming language \texttt{LED}
             % \cite{RushtonPhan2018discrete}
-            into \sllang{} and \tex{}.
+            into \texttt{SequenceL} and \texttt{LaTeX}.
     \end{itemize}
     % Supervisor: Nelson Rushton (Texas Tech University).
 }
-\cventry{2015--2016}{L}{Logic}{\url{https://github.com/iensen/LtoASPtranslator}}{}{
+\cventry{2015-2016}{L}{Logic}{\url{https://github.com/iensen/LtoASPtranslator}}{}{
     \begin{itemize}
-        \item Translated the logic programming language \llang{} into \aplong{} with Evgenii Balai.
+        \item Translated the logic programming language \texttt{L} into \texttt{Answer Set Prolog} with Evgenii Balai.
     \end{itemize}
     % Supervisor: Nelson Rushton (Texas Tech University).
 }
@@ -135,15 +132,15 @@ He solves computational counting problems with dynamic programming and knowledge
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Graduate Courses}
-\cventry{2020--2021}{Bioinformatics: Sequence Analysis; Reasoning about Software}{}{}{}{}
-\cventry{2019--2020}{Computer Systems Architecture; Statistical Machine Learning}{}{}{}{}
-\cventry{2018--2019}{Artificial Intelligence; Compiler Construction, Multi-Core Computing}{}{}{}{}
-\cventry{2017--2018}{Logic in Computer Science; Programming Languages}{}{}{}{}
+\cventry{2020-2021}{Bioinformatics: Sequence Analysis; Reasoning about Software}{}{}{}{}
+\cventry{2019-2020}{Computer Systems Architecture; Statistical Machine Learning}{}{}{}{}
+\cventry{2018-2019}{Artificial Intelligence; Compiler Construction, Multi-Core Computing}{}{}{}{}
+\cventry{2017-2018}{Logic in Computer Science; Programming Languages}{}{}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \printbibheading[title={Bibliography}]
-\vp{} is the corresponding author of the following publications (authors sorted by surnames)%
+Vu Phan is the corresponding author of the following publications (authors sorted by surnames)%
 % , except for \cite{RushtonPhan2018discrete}%
 .
 
@@ -153,14 +150,14 @@ He solves computational counting problems with dynamic programming and knowledge
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \section{\maths{} Contests}
+% \section{Math Contests}
 % \cventry{2016}{\putnam}{\maa}{}{}{
 %     \begin{itemize}
 %         \item Participated (rank 733/4164, score 20/120).
 %         \item Submitted solutions for problems A1/B3 (complete) and A2/B5 (partial).
 %     \end{itemize}
 % }
-% \cventry{2013--2014}{\sml}{\amatyc}{}{}{
+% \cventry{2013-2014}{\sml}{\amatyc}{}{}{
 %     \begin{itemize}
 %     \item Won Southwest Region (AZ, NM, OK, TX) \\
 %         in 2012-2013 (round 2) and 2013-2014 (round 2 and aggregate).
@@ -178,12 +175,12 @@ He solves computational counting problems with dynamic programming and knowledge
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \section{Awards}
-% \cventry{2017--2022}{Ph.D. Student Tuition and Stipend}{}{\rice}{}{}
-% \cventry{2016--2017}{General Scholarship}{}{\ttu}{}{}
-% \cventry{2015--2017}{Academic Achievement Scholarship}{}{\ttu}{}{}
-% \cventry{2015--2017}{Undergraduate Achievement Scholarship}{}{\ttu}{}{}
-% \cventry{2015--2016}{Undergraduate Research Scholarship}{}{\ttu}{}{}
-% \cventry{2014--2016}{Proven Achiever Scholarship}{}{\ttu}{}{}
+% \cventry{2017-2022}{Ph.D. Student Tuition and Stipend}{}{Rice University}{}{}
+% \cventry{2016-2017}{General Scholarship}{}{Texas Tech University}{}{}
+% \cventry{2015-2017}{Academic Achievement Scholarship}{}{Texas Tech University}{}{}
+% \cventry{2015-2017}{Undergraduate Achievement Scholarship}{}{Texas Tech University}{}{}
+% \cventry{2015-2016}{Undergraduate Research Scholarship}{}{Texas Tech University}{}{}
+% \cventry{2014-2016}{Proven Achiever Scholarship}{}{Texas Tech University}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
