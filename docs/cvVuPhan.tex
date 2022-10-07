@@ -24,8 +24,10 @@
 \addbibresource{BIBs/20aaai.txt}
 \addbibresource{BIBs/20cp.txt}
 \addbibresource{BIBs/21sat.txt}
+\addbibresource{BIBs/22phd.txt}
 
 %% CV order:
+\nocite{Phan2022quantitative}
 \nocite{Phan2019weighted}
 \nocite{DudekPhanVardi2021procount}
 \nocite{DudekPhanVardi2020dpmc}
@@ -41,7 +43,7 @@
 \title{Curriculum Vitae}
 
 %% PDF will be in following order, which cannot be changed
-\address{Houston, Texas}
+\address{Portland, Oregon}
 % \phone[mobile]{469-230-1804}
 % \email{vhp1@rice.edu}
 \homepage{vuphan314.github.io}
@@ -56,29 +58,26 @@
 \begin{document}
 
 Latest version: \url{https://vuphan314.github.io} \\
-This version: 2022/07/04
+This version: 2022 Oct 07
 
 \makecvtitle
 
-Vu Phan is a Computer Science Ph.D. student of Prof. Moshe Vardi at Rice University, graduating in 2022 August.
-He solves stochastic satisfiability with dynamic programming and knowledge compilation.
-\\
-(Vu Phan is a citizen of Vietnam. He was issued an F1 visa and is currently staying in Texas.)
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Education}
-\cventry{2017-2022}{Ph.D. in Computer Science}{Rice University}{GPA 3.61/4.00}{graduating 2022 Aug}{}
-\cventry{2017-2019}{M.S. in Computer Science}{Rice University}{GPA 3.60/4.00}{graduated 2019 Dec}{}
-\cventry{2014-2017}{B.S. in Computer Science \& Math}{Texas Tech University}{GPA 4.00/4.00}{graduated 2017 Aug}{}
+Vu is a Formal Verification engineer at Intel Corporation,
+performing pre-silicon validation of a hardware design.
+He earned a Ph.D. in Computer Science at Rice University, advised by Prof. Moshe Vardi.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\cventry{2021 May-Aug}{Graduate Technical Intern}{Intel Corporation}{Formal Verification}{}{
+\cventry{2022-now}{Computer Engineer}{Intel Corporation}{}{}{
     \begin{itemize}
-        \item Wrote context-free grammar to convert SystemVerilog scoreboards from one formal tool to another.
-        \item Developed scripts to run experiments comparing two formal tools and to report results.
+        \item Performing pre-silicon Formal Verification of an Intellectual Property in a System on a Chip.
+    \end{itemize}
+}
+\cventry{2021 May-Aug}{Technical Intern}{Intel Corporation}{}{}{
+    \begin{itemize}
+        % \item Wrote context-free grammar to convert SystemVerilog scoreboards from one formal tool to another.
+        \item Developed software to benchmark Formal Verification platforms.
     \end{itemize}
 }
 % \cventry{2020-2021}{Peer Reviewer}{International Conference on Artificial Intelligence and Statistics (AISTATS)}{}{}{}
@@ -90,13 +89,20 @@ He solves stochastic satisfiability with dynamic programming and knowledge compi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Programming Languages}
+\section{Languages}
 \cventry{Hardware}{SystemVerilog}{}{}{}{}
 \cventry{Software}{Python, C++; Dafny, Coq}{}{}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Public Projects}
+\section{Education}
+\cventry{2017-2022}{Ph.D. in Computer Science}{Rice University}{GPA 3.61/4.00}{}{}
+\cventry{2017-2019}{M.S. in Computer Science}{Rice University}{GPA 3.60/4.00}{}{}
+\cventry{2014-2017}{B.S. in Computer Science \& Math}{Texas Tech University}{GPA 4.00/4.00}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
 \cventry{2020-2021}{ProCount}{Projected Counter}{\url{https://github.com/vardigroup/DPMC}}{}{
     \begin{itemize}
         \item Implemented a weighted projected \#SAT framework with Jeffrey Dudek.
@@ -117,7 +123,7 @@ He solves stochastic satisfiability with dynamic programming and knowledge compi
 }
 \cventry{2016-2018}{LED}{Language of Effective Definitions}{\url{https://vuphan314.github.io/LED}}{}{
     \begin{itemize}
-        \item Translated the literate programming language \texttt{LED}
+        \item Translated the literate-programming language \texttt{LED}
             % \cite{RushtonPhan2018discrete}
             into \texttt{SequenceL} and \texttt{LaTeX}.
     \end{itemize}
@@ -125,15 +131,15 @@ He solves stochastic satisfiability with dynamic programming and knowledge compi
 }
 \cventry{2015-2016}{L}{Logic}{\url{https://github.com/iensen/LtoASPtranslator}}{}{
     \begin{itemize}
-        \item Translated the logic programming language \texttt{L} into \texttt{Answer Set Prolog} with Evgenii Balai.
+        \item Translated the logic-programming language \texttt{L} into \texttt{Answer Set Prolog} with Evgenii Balai.
     \end{itemize}
     % Supervisor: Nelson Rushton (Texas Tech University).
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{University Courses}
-\cventry{2017-2021}{Graduate}{}{}{}{
+\section{Coursework}
+\cventry{2017-2021}{Graduate Level}{}{}{}{
     \begin{itemize}
         \item Reasoning about Software
         \item Bioinformatics: Sequence Analysis
@@ -146,7 +152,7 @@ He solves stochastic satisfiability with dynamic programming and knowledge compi
         \item Logic in Computer Science
     \end{itemize}
 }
-\cventry{2014-2017}{Undergraduate}{}{}{}{
+\cventry{2014-2017}{Undergraduate Level}{}{}{}{
     \begin{itemize}
         \item Operating Systems
         \item Database Systems
@@ -166,11 +172,12 @@ He solves stochastic satisfiability with dynamic programming and knowledge compi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \printbibheading[title={Bibliography}]
-Vu Phan is the correspondence author of the following publications (authors are sorted by surnames)%
+Vu Phan is the correspondence author of the following publications
+(authors are sorted by surnames)%
 % , except for \cite{RushtonPhan2018discrete}%
 .
 
-\printbibliography[type=thesis, heading=subbibliography, title={Thesis}]
+\printbibliography[type=thesis, heading=subbibliography, title={Theses}]
 \printbibliography[keyword=conference, heading=subbibliography, title={Conference Papers}]
 \printbibliography[keyword=workshop, heading=subbibliography, title={Workshop Paper}]
 
