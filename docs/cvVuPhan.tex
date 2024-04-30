@@ -26,6 +26,8 @@
 \addbibresource{BIBs/21sat.txt}
 \addbibresource{BIBs/22phd.txt}
 
+\usepackage{multicol}
+
 %% CV order:
 \nocite{Phan2022quantitative}
 \nocite{Phan2019weighted}
@@ -57,14 +59,14 @@
 
 \begin{document}
 
-Latest version: \url{https://vuphan314.github.io} \\
-This version: 2023 Mar 07
+2024 Apr 30
 
 \makecvtitle
 
 Vu Phan is a Formal Verification engineer at Intel,
-where he performs pre-silicon validation of a hardware design.
-Vu earned a Ph.D. degree in Computer Science at Rice University;
+performing pre-silicon validation of hardware designs.
+
+Vu earned a Ph.D. degree in Computer Science at Rice;
 his advisor was Prof. Moshe Vardi.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -72,7 +74,7 @@ his advisor was Prof. Moshe Vardi.
 \section{Experience}
 \cventry{2022-now}{Validation Engineer}{Intel Corporation}{}{}{
     \begin{itemize}
-        \item Perform pre-silicon Formal Verification of an Intellectual Property in a System on a Chip
+        \item Perform pre-silicon Formal Verification of Integration Units in a System on a Chip
     \end{itemize}
     Skills: Computer Architecture, SystemVerilog, TCL
 }
@@ -114,12 +116,12 @@ his advisor was Prof. Moshe Vardi.
 % }
 \cventry{2019-2021}{DPMC}{Dynamic-Programming Model Counter}{\url{https://github.com/vardigroup/DPMC}}{}{
     \begin{itemize}
-        \item Implemented a weighted \#SAT framework with Jeffrey Dudek
+        \item Implemented a weighted-\#SAT framework with Jeffrey Dudek
     \end{itemize}
 }
 \cventry{2018-2019}{ADDMC}{Algebraic-Decision-Diagram Model Counter}{\url{https://github.com/vardigroup/ADDMC}}{}{
     \begin{itemize}
-        \item Implemented a weighted \#SAT solver
+        \item Implemented a weighted-\#SAT solver
     \end{itemize}
 }
 \cventry{2016-2018}{LED}{Language of Effective Definitions}{\url{https://vuphan314.github.io/LED}}{}{
@@ -137,10 +139,12 @@ his advisor was Prof. Moshe Vardi.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Courses}
+\section{Computing Courses}
 \cventry{2017-2021}{Graduate Level}{}{}{}{
-    \begin{itemize}
-        \item Reasoning about Software (languages: Dafny, Coq)
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item Reasoning about Software
+        % (languages: Dafny, Coq)
         \item Bioinformatics: Sequence Analysis
         \item Statistical Machine Learning
         \item Computer Systems Architecture
@@ -148,11 +152,14 @@ his advisor was Prof. Moshe Vardi.
         \item Compiler Construction
         \item Artificial Intelligence
         \item Programming Languages
+        \item Automated Program Verification
         \item Logic in Computer Science
-    \end{itemize}
+    \end{enumerate}
+    \end{multicols}
 }
-\cventry{2014-2017}{Undergraduate Level}{}{}{}{
-    \begin{itemize}
+\cventry{2015-2017}{Undergraduate Level}{}{}{}{
+    \begin{multicols}{2}
+    \begin{enumerate}
         \item Operating Systems
         \item Database Systems
         \item Computer Architecture
@@ -160,12 +167,13 @@ his advisor was Prof. Moshe Vardi.
         \item Software Engineering
         \item Algorithms
         \item Object-Oriented Programming
-        \item Computer Organization and Assembly Language Programming
+        \item Computer Organization and Assembly Language
         \item Modern Digital System Design
         \item Data Structures
         \item Automata
         \item Programming Principles
-    \end{itemize}
+    \end{enumerate}
+    \end{multicols}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
