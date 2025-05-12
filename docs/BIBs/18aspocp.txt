@@ -1,0 +1,11 @@
+@inproceedings{Phan2018syntactic,
+  title={{Syntactic Conditions for Antichain Property in Consistency Restoring Prolog}},
+  abstract={
+    We study syntactic conditions which guarantee when a CR-Prolog (Consistency Restoring Prolog) program has antichain property: no answer set is a proper subset of another. A notable such condition is that the program's dependency graph being acyclic and having no directed path from one cr-rule head literal to another.
+  },
+  url={https://arxiv.org/abs/1809.09319},
+  author={Phan, Vu H. N.},
+  date={2018},
+  booktitle={Workshop on Answer Set Programming and Other Computing Paradigms (ASPOCP)},
+  keywords={workshop},
+}
