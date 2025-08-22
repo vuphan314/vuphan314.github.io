@@ -1,0 +1,11 @@
+@inproceedings{DudekPhanVardi2021procount,
+  title={{ProCount: Weighted Projected Model Counting with Graded Project-Join Trees}},
+  abstract={
+    Recent work in weighted model counting proposed a unifying framework for dynamic-programming algorithms. The core of this framework is a project-join tree: an execution plan that specifies how Boolean variables are eliminated. We adapt this framework to compute exact literal-weighted projected model counts of propositional formulas in conjunctive normal form. Our key conceptual contribution is to define gradedness on project-join trees, a novel condition requiring irrelevant variables to be eliminated before relevant variables. We prove that building graded project-join trees can be reduced to building standard project-join trees and that graded project-join trees can be used to compute projected model counts. The resulting tool ProCount is competitive with the state-of-the-art tools D4P, projMC, and reSSAT, achieving the shortest solving time on 131 benchmarks of 390 benchmarks solved by at least one tool, from 849 benchmarks in total.
+  },
+  url={https://kasekopf.github.io/papers/sat21_procount.pdf},
+  author={Dudek, Jeffrey M. and Phan, Vu H. N. and Vardi, Moshe Y.},
+  date={2021},
+  booktitle={Conference on Theory and Applications of Satisfiability Testing (SAT)},
+  keywords={conference},
+}
